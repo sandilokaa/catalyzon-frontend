@@ -8,6 +8,7 @@
 :root{
     --font-color-white: #FFFFFF;
     --font-color-black: #020F14;
+    --background-color-button: #012E80;
 }
 
 
@@ -138,5 +139,88 @@
 }
 
 /* ---------- End Client Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Vision & Missions Content ---------- */
+
+#vision-missions-content{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+#vision-missions-content .vision-missions-describe h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#vision-missions-content .vision-missions-describe p{
+    margin-top: 4%;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#vision-missions-content .vision-missions-describe button{
+    margin-top: 5%;
+    width: 35%;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--background-color-button);
+    border: var(--background-color-button) 1px solid ;
+}
+
+#vision-missions-content button img{
+    width: 13px;
+    margin-left: 10px;
+}
+
+#vision-missions-content .selected-button-outlook button{
+    position: relative;
+    font-size: 18px;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 4%;
+    background-color: transparent;
+    border: none;
+    color: var(--font-color-black);
+    text-align: right;
+    transition: 0.3s all ease-in-out;
+}
+
+#vision-missions-content .selected-button-outlook button:hover{
+    background-color: var(--background-color-button);
+    border: var(--background-color-button) 1px solid;
+    color: var(--font-color-white);
+}
+
+#vision-missions-content .selected-button-outlook span{
+    position: absolute;
+    top: 2px; 
+    left: 10%; 
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: var(--font-color-black);
+}
+
+#vision-missions-content .selected-button-outlook button:hover span{
+    color: var(--font-color-white);
+}
+
+#vision-missions-content .selected-button-outlook .active{
+    background-color: var(--background-color-button);
+    border: var(--background-color-button) 1px solid;
+    color: var(--font-color-white);
+}
+
+#vision-missions-content .selected-button-outlook .active span{
+    color: var(--font-color-white);
+}
+
+/* ---------- End Vision & Missions Content ---------- */
 
 /* ====================================================== */
