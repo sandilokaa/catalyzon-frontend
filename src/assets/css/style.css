@@ -19,6 +19,12 @@
     padding: 10px 0;
     height: 90px;
     background-color: transparent;
+    transition: background-color 0.3s ease-in-out
+}
+
+.navbar-scrolled {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .nav-link{
@@ -28,7 +34,16 @@
     font-weight: 500;
     text-decoration: none;
     list-style: none;
+    transition: background-color 0.3s ease-in-out
+}
 
+.nav-link-scrolled{
+    font-size: 18px;
+    margin-left: 40px;
+    color: var(--font-color-black);
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
 }
 
 .nav-link:hover{
@@ -93,5 +108,35 @@
 
 
 /* ---------- End Main Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Client Content ---------- */
+
+#client-content{
+    margin-top: 6%;
+}
+
+#client-content h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#client-content .client-logo{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#client-content .client-logo img{
+    width: 130px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ---------- End Client Content ---------- */
 
 /* ====================================================== */

@@ -1,3 +1,9 @@
+:root{
+    --font-color-white: #FFFFFF;
+    --font-color-black: #020F14;
+}
+
+
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
     /* ====================================================== */
@@ -6,9 +12,85 @@
 
     .nav-link{
         margin-left: 0;
+        background-color: #FFFFFF;
+        color: var(--font-color-black);
     }
 
+    .nav-link:hover{
+        color: var(--font-color-black);
+    }
+    
+
     /* ---------- End Navbar ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Main Content ---------- */
+
+    #main-content{
+        position: relative;
+        overflow: hidden;
+        padding: 16% 0;
+    }
+    
+    .heading-title .title-one h5{
+        margin-top: 25%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .heading-title .title-two h1{
+        font-size: 84px;
+        font-weight: 700;
+    }
+    
+    .heading-title .title-two :nth-child(2){
+        display: flex;
+    }
+    
+    .heading-title .title-two :nth-child(2) .main-title-vector{
+        height: 40px;
+        width: 40px;
+        margin: auto 4%;
+    }
+    
+    .heading-title .title-three h5{
+        margin-top: 6%;
+        font-size: 22px;
+        font-weight: 200;
+    }
+
+    /* ---------- End Main Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Client Content ---------- */
+
+    #client-content{
+        margin-top: 10%;
+    }
+    
+    #client-content h5{
+        font-size: 20px;
+    }
+    
+    #client-content .client-logo{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    #client-content .client-logo img{
+        width: 100px;
+        height: 36px;
+    }
+
+    /* ---------- End Client Content ---------- */
 
     /* ====================================================== */
 

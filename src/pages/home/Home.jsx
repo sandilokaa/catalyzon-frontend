@@ -3,14 +3,18 @@ import {
     Row,
     Col,
     Container,
-    Image,
-    Button
+    Image
 } from "react-bootstrap";
+import Marquee from "react-fast-marquee";
 
 import HomeLayout from "../../layouts/home/HomeLayout";
+import MarqueeClient from "../../components/marquee/Client";
 
 import BackgroundImage from "../../assets/images/bg-main-content.png";
 import TitleVector from "../../assets/images/o-vector.png";
+
+import "../../assets/css/style.css";
+import "../../assets/css/responsive.css";
 
 const Home = () => {
 
@@ -23,7 +27,7 @@ const Home = () => {
                 <Container className="heading-title">
                     <div className="head-title-main-content">
                         <Row className="title-one">
-                            <Col xs={6} xl={3}>
+                            <Col xs={12} xl={3}>
                                 <h5>Movement towards a sustainable prosperity</h5>
                             </Col>
                         </Row>
@@ -37,11 +41,24 @@ const Home = () => {
                             </Col>
                         </Row>
                         <Row className="title-three">
-                            <Col xs={6} xl={4}>
+                            <Col xs={12} xl={4}>
                                 <h5>We are on a mission to provide a comprehensive waste-to-energy solution.</h5>
                             </Col>
                         </Row>
                     </div>
+                </Container>
+            </div>
+
+            <div id="client-content">
+                <Container>
+                    <h5>Trusted by</h5>
+                    <Marquee
+                        className="client-logo"
+                        speed={50}
+                        gradient={true}
+                    >
+                        <MarqueeClient/>
+                    </Marquee>
                 </Container>
             </div>
 
