@@ -150,6 +150,102 @@
 
     /* ====================================================== */
 
+    /* ---------- Awards & Recognitions Content ---------- */
+
+    #awards-recognitions-content{
+        margin-top: 10%;
+    }
+    
+    #awards-recognitions-content .awards-recognitions-title h1{
+        font-size: 36px;
+    }
+    
+    #awards-recognitions-content .awards-recognitions-title p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    #awards-recognitions-content hr{
+        margin-top: 2%;
+    }
+    
+    #awards-recognitions-content .awards-describe{
+        margin-top: 2%;
+    }
+    
+    #awards-recognitions-content .awards-describe h1{
+        font-size: 24px;
+    }
+    
+    #awards-recognitions-content button{
+        height: 40px;
+        width: 40%;
+    }
+    
+    #awards-recognitions-content button img{
+        height: 12px;
+        margin-left: 8%;
+    }
+
+    /* ---------- End Awards & Recognitions Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Contact Content ---------- */
+
+    #contact-content{
+        margin-top: 10%;
+    }
+    
+    #contact-content h1{
+        font-size: 78px;
+    }
+    
+    #contact-content img{
+        display: none;
+    }
+    
+    #contact-content p{
+        margin-bottom: 16%;
+        padding: 4% 0 0 0;
+        text-align: start;
+        font-size: 20px;
+    }
+
+    #contact-content .mouse-follower img{
+        display: inline-block;
+        height: 45px;
+        width: auto;
+    }
+    
+    #contact-content .mouse-follower p{
+        color: var(--font-color-black);
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 60%;
+        margin-left: 15%;
+        float: left;
+    }
+    
+    @keyframes grow {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    /* ---------- End Contact Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
     /* ---------- Client Content ---------- */
 
     #client-content{

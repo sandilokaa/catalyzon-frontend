@@ -203,7 +203,6 @@
 
 #solutions-facilities-content{
     margin-top: 6%;
-    margin-bottom: 6%;
 }
 
 #solutions-facilities-content .solutions-facilities-describe{
@@ -316,6 +315,121 @@
 }
 
 /* ---------- End Solutions & Facilities Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Awards & Recognitions Content ---------- */
+
+#awards-recognitions-content{
+    margin-top: 6%;
+}
+
+#awards-recognitions-content .awards-recognitions-title h1{
+    font-size: 54px;
+    font-weight: 600;
+}
+
+#awards-recognitions-content .awards-recognitions-title p{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#awards-recognitions-content hr{
+    margin-top: 2%;
+}
+
+#awards-recognitions-content .awards-describe{
+    margin-top: 2%;
+}
+
+#awards-recognitions-content .awards-describe h1{
+    font-size: 28px;
+}
+
+#awards-recognitions-content button{
+    margin-top: 4%;
+    background-color: var(--background-color-button);
+    border: var(--background-color-button) 1px solid;
+    color: var(--font-color-white);
+    height: 40px;
+    width: 14%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#awards-recognitions-content button img{
+    height: 12px;
+    margin-left: 8%;
+}
+
+/* ---------- End Awards & Recognitions Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Contact Content ---------- */
+
+#contact-content{
+    margin-top: 6%;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact-content .background-contact-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color-retangle-two);
+}
+
+#contact-content h1{
+    margin: auto 0;
+    padding: 16% 0;
+    font-size: 108px;
+    font-weight: 600;
+    color: var(--font-color-white);
+}
+
+#contact-content img{
+    padding: 24% 0 0 0;
+    height: auto;
+    width: auto;
+}
+
+#contact-content p{
+    margin: auto 0;
+    padding: 24% 0 0 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--font-color-white);
+    text-align: end;
+}
+
+#contact-content .mouse-follower p{
+    color: var(--font-color-black);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 42%;
+    margin-left: 15%;
+    float: left;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* ---------- End Contact Content ---------- */
 
 /* ====================================================== */
 
