@@ -7,6 +7,10 @@ import {
     Button
 } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { FacilitiesCollectionData } from "../../assets/data/facilities";
+import { SolutionsCollectionData } from "../../assets/data/solutions";
 
 import HomeLayout from "../../layouts/home/HomeLayout";
 import MarqueeClient from "../../components/marquee/Client";
@@ -19,7 +23,10 @@ import BackgroundImage from "../../assets/images/bg-main-content.png";
 import TitleVector from "../../assets/images/o-vector.png";
 
 import "../../assets/css/style.css";
+import "../../assets/css/swiper.css";
 import "../../assets/css/responsive.css";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Home = () => {
 
@@ -53,7 +60,7 @@ const Home = () => {
                                 <h1>saving</h1>
                             </Col>
                             <Col xs={12} xl={7}>
-                                <Image className="main-title-vector" src={TitleVector}/>
+                                <Image className="main-title-vector" src={TitleVector} />
                                 <h1>nature </h1>
                             </Col>
                         </Row>
@@ -76,16 +83,16 @@ const Home = () => {
                         {selectedOutlookButton && (
                             <Col xs={12} xl={4}>
                                 {selectedOutlookButton === 'Circular Economy' && (
-                                    <CircularEconomy/>
+                                    <CircularEconomy />
                                 )}
                                 {selectedOutlookButton === 'Renewable Energy' && (
-                                    <RenewableEnergy/>
+                                    <RenewableEnergy />
                                 )}
                                 {selectedOutlookButton === 'Climate Empowerment' && (
-                                    <ClimateEmpowerment/>
+                                    <ClimateEmpowerment />
                                 )}
                                 {selectedOutlookButton === 'Digital Transformation' && (
-                                    <DigitalTransformation/>
+                                    <DigitalTransformation />
                                 )}
                             </Col>
                         )}
@@ -129,6 +136,83 @@ const Home = () => {
                 </Container>
             </div>
 
+            <div id="solutions-facilities-content">
+                <Container>
+                    <Row className="solutions-facilities-describe">
+                        <Col xs={12} xl={6} className="solutions-content">
+                            <Row>
+                                <Col xs={12} xl={6}>
+                                    <Button>
+                                        solutions
+                                    </Button>
+                                    <h5>Our solutions.</h5>
+                                    <h4>What we solutions.</h4>
+                                    <p>We provide the best quality products through well process control and laboratory tested.</p>
+                                </Col>
+                                <Col xs={12} xl={6}>
+                                    <Swiper
+                                        spaceBetween={20}
+                                        slidesPerView={2}
+                                        direction="vertical"
+                                        scrollbar={{ draggable: true }}
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        modules={[Pagination]}
+                                        style={{ height: '325px' }}
+                                        className="swiper"
+                                    >
+                                        {
+                                            SolutionsCollectionData.Collections.map((solutions) => {
+                                                return (
+                                                    <SwiperSlide key={solutions.id} className="swiper-slide">
+                                                        <Image src={solutions.properties.image} alt={solutions.properties.alt} />
+                                                        <div className="overlay">{solutions.properties.title}</div>
+                                                    </SwiperSlide>
+                                                )
+                                            })
+                                        }
+                                    </Swiper>
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col xs={12} xl={6} className="facilities-content">
+                            <Row>
+                                <Col xs={12} xl={6}>
+                                    <Button>
+                                        facilities
+                                    </Button>
+                                    <h5>Our facilities.</h5>
+                                    <h4>What we facilities.</h4>
+                                    <p>We provide the best facitilies to assist you in facing this solution.</p>
+                                </Col>
+                                <Col xs={12} xl={6}>
+                                    <Swiper
+                                        spaceBetween={50}
+                                        slidesPerView={1}
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        modules={[Pagination]}
+                                    >
+                                        {
+                                            FacilitiesCollectionData.Collections.map((facilities) => {
+                                                return (
+                                                    <SwiperSlide key={facilities.id} className="swiper-slide">
+                                                        <Image src={facilities.properties.image} alt={facilities.properties.alt} className="image-with-overlay" />
+                                                        <div className="overlay">{facilities.properties.title}</div>
+                                                    </SwiperSlide>
+                                                )
+                                            })
+                                        }
+                                    </Swiper>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
             <div id="client-content">
                 <Container>
                     <h5>Trusted by</h5>
@@ -137,7 +221,7 @@ const Home = () => {
                         speed={50}
                         gradient={true}
                     >
-                        <MarqueeClient/>
+                        <MarqueeClient />
                     </Marquee>
                 </Container>
             </div>

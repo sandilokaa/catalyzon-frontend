@@ -108,6 +108,48 @@
 
     /* ====================================================== */
 
+    /* ---------- Solutions & Facilities Content ---------- */
+
+    #solutions-facilities-content{
+        margin-top: 10%;
+        margin-bottom: 6%;
+    }
+
+    #solutions-facilities-content .solutions-facilities-describe .solutions-content,
+    #solutions-facilities-content .solutions-facilities-describe .facilities-content{
+        width: calc(100% - 20px);
+        margin: 2% auto;
+        padding: 4%;
+    }
+
+    #solutions-facilities-content .solutions-content h5,
+    #solutions-facilities-content .facilities-content h5
+    {
+        margin-top: 15%;
+    }
+
+    #solutions-facilities-content .solutions-content h4,
+    #solutions-facilities-content .facilities-content h4
+    {
+        font-size: 22px;
+    }
+
+    #solutions-facilities-content .solutions-content p,
+    #solutions-facilities-content .facilities-content p{
+        font-size: 18px;
+    }
+
+    .swiper-slide .overlay {
+        font-size: 1.1rem;
+    }
+
+    /* ---------- End Solutions & Facilities Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
     /* ---------- Client Content ---------- */
 
     #client-content{

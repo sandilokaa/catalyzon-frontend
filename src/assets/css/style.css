@@ -9,6 +9,8 @@
     --font-color-white: #FFFFFF;
     --font-color-black: #020F14;
     --background-color-button: #012E80;
+    --background-color-retangle-one: #F5F5F5;
+    --background-color-retangle-two: #012E80;
 }
 
 
@@ -115,41 +117,10 @@
 
 /* ====================================================== */
 
-/* ---------- Client Content ---------- */
-
-#client-content{
-    margin-top: 6%;
-}
-
-#client-content h5{
-    font-size: 24px;
-    font-weight: 600;
-}
-
-#client-content .client-logo{
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-#client-content .client-logo img{
-    width: 130px;
-    height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-/* ---------- End Client Content ---------- */
-
-/* ====================================================== */
-
-
-/* ====================================================== */
-
 /* ---------- Vision & Missions Content ---------- */
 
 #vision-missions-content{
     margin-top: 6%;
-    margin-bottom: 6%;
 }
 
 #vision-missions-content .vision-missions-describe h5{
@@ -222,5 +193,158 @@
 }
 
 /* ---------- End Vision & Missions Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Solutions & Facilities Content ---------- */
+
+#solutions-facilities-content{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+#solutions-facilities-content .solutions-facilities-describe{
+    display: flex;
+    justify-content: space-between;
+}
+
+#solutions-facilities-content .solutions-facilities-describe .solutions-content,
+#solutions-facilities-content .solutions-facilities-describe .facilities-content{
+    width: calc(50% - 20px);
+}
+
+#solutions-facilities-content .solutions-content{
+    padding: 2%;
+    background-color: var(--background-color-retangle-one);
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+#solutions-facilities-content .solutions-content button,
+#solutions-facilities-content .facilities-content button 
+{
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: var(--font-color-black);
+    font-weight: 600;
+}
+
+#solutions-facilities-content .solutions-content h5{
+    margin-top: 30%;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--font-color-black);
+}
+
+#solutions-facilities-content .solutions-content h4{
+    margin-top: 8%;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--font-color-black);
+}
+
+#solutions-facilities-content .solutions-content p{
+    margin-top: 8%;
+    font-size: 20px;
+    color: var(--font-color-black);
+    font-weight: 200;
+}
+
+#solutions-facilities-content .facilities-content{
+    padding: 2%;
+    background-color: var(--background-color-retangle-two);
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+
+#solutions-facilities-content .facilities-content h5{
+    margin-top: 30%;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--font-color-white);
+}
+
+#solutions-facilities-content .facilities-content h4{
+    margin-top: 8%;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--font-color-white);
+}
+
+#solutions-facilities-content .facilities-content p{
+    margin-top: 8%;
+    font-size: 20px;
+    color: var(--font-color-white);
+    font-weight: 200;
+}
+
+.swiper-slide {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+
+.swiper-slide .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--font-color-white);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+.swiper-slide:hover .overlay {
+    opacity: 1;
+    border-radius: 20px;
+}
+
+/* ---------- End Solutions & Facilities Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Client Content ---------- */
+
+#client-content{
+    margin-top: 6%;
+}
+
+#client-content h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#client-content .client-logo{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#client-content .client-logo img{
+    width: 130px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ---------- End Client Content ---------- */
 
 /* ====================================================== */
