@@ -468,6 +468,11 @@
     margin-top: 6%;
 }
 
+#sdgs-describe-content .card{
+    width: 90%;
+    margin: 0 auto;
+}
+
 #sdgs-describe-content .card-text{
     font-size: 20px;
     text-align: center;
