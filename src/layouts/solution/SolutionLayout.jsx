@@ -1,13 +1,13 @@
 import React from "react";
 
-import NavbarGeneral from "../../components/navbar/Navbar";
+import NavbarSolution from "../../components/navbar/NavbarSolution";
 import FooterComponent from "../../components/footer/Footer";
 
-const HomeLayout = ({ children }) => {
+const SolutionLayout = ({ children }) => {
     return (
         <>
             <div>
-                <NavbarGeneral />
+                <NavbarSolution />
             </div>
             <div>
                 {children}
@@ -19,4 +19,4 @@ const HomeLayout = ({ children }) => {
     );
 };
 
-export default HomeLayout;
+export default SolutionLayout;

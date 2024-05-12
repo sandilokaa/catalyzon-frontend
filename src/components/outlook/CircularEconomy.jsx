@@ -3,7 +3,7 @@ import {
     Button
 } from "react-bootstrap";
 
-import "../../assets/css/style.css";
+import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const CircularEconomy = () => {

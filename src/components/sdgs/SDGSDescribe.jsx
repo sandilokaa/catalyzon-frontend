@@ -14,7 +14,7 @@ import SDGS12Image from "../../assets/images/12-sdgs.png";
 import SDGS13Image from "../../assets/images/13-sdgs.png";
 import SDGS17Image from "../../assets/images/17-sdgs.png";
 
-import "../../assets/css/style.css";
+import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const SDGSDescribe = () => {

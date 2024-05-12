@@ -33,8 +33,8 @@ export const SolutionsCollectionData = {
             properties:
             {
                 image: SolutionThreeImage,
-                title: "Company Responsibility Service",
-                alt: "Company Responsibility Service Image"
+                title: "Training and Community Development",
+                alt: "Training and Community Development Image"
             }
         },
         {
@@ -43,18 +43,8 @@ export const SolutionsCollectionData = {
             properties:
             {
                 image: SolutionFourImage,
-                title: "Environmental & Energy Consulting",
+                title: "Digital Decarbonization",
                 alt: "Environmental & Energy Consulting Image"
-            }
-        },
-        {
-            type: "Solutions",
-            id: "5",
-            properties:
-            {
-                image: SolutionFiveImage,
-                title: "Training and Community Development",
-                alt: "Training and Community Development Image"
             }
         }
     ]

@@ -101,7 +101,7 @@
     /* ---------- Solutions & Facilities Content ---------- */
 
     #solutions-facilities-content{
-        margin-top: 10%;
+        margin-top: 12%;
         margin-bottom: 6%;
     }
 
@@ -143,7 +143,7 @@
     /* ---------- Awards & Recognitions Content ---------- */
 
     #awards-recognitions-content{
-        margin-top: 10%;
+        margin-top: 12%;
     }
     
     #awards-recognitions-content .awards-recognitions-title h1{
@@ -359,7 +359,7 @@
     /* ---------- Client Content ---------- */
 
     #client-content{
-        margin-top: 10%;
+        margin-top: 12%;
     }
     
     #client-content h5{
@@ -387,7 +387,6 @@
 
     #media-content{
         margin-top: 12%;
-        margin-bottom: 6%;
     }
 
     #media-content h1{
@@ -410,16 +409,61 @@
         font-weight: 600;
     }
 
-    #media-content .media-card .card-link{
-        font-weight: 600;
-        text-decoration: none;
-        list-style: none;
-        cursor: pointer;
-    }
-
     /* ---------- End Media Content ---------- */
 
     /* ====================================================== */
 
+
+    /* ====================================================== */
+
+    /* ---------- Contact Content ---------- */
+
+    #contact-content{
+        margin-top: 12%;
+    }
+
+    #contact-content .contact-describe{
+        padding: 8%;
+    }
+
+    #contact-content h1{
+        font-size: 30px;
+    }
+
+    #contact-content .btn-contact{
+        margin-top: 12%;
+        width: 40%;
+    }
+
+    /* ---------- End Contact Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Footer Content ---------- */
+
+    #footer-content span{
+        color: var(--font-color-white);
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    #footer-content img{
+        width: 15%;
+    }
+
+    #footer-content .footer-describe{
+        padding: 6% 4%;
+    }
+
+    #footer-content .company-describe{
+        text-align: center;
+    }
+
+    /* ---------- End Footer Content ---------- */
+
+    /* ====================================================== */
 
 }

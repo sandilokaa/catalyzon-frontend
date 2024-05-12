@@ -26,7 +26,7 @@ import ImpactCard from "../../components/impact/ImpactCard";
 
 import SearchImpactIcon from "../../assets/images/search-impact-icon.png";
 
-import "../../assets/css/style.css";
+import "../../assets/css/home.css";
 import "../../assets/css/swiper.css";
 import "../../assets/css/responsive.css";
 import "swiper/css";
@@ -324,7 +324,7 @@ const Home = () => {
                                 return (
                                     <Col xs={12} xl={3} key={media.id} className="media-describe">
                                         <Card className="border-0">
-                                            <Card.Img className="media-image" variant="top" src={media.properties.image} alt={media.properties.alt}/>
+                                            <Card.Img className="media-image" variant="top" src={media.properties.image} alt={media.properties.alt} />
                                             <Card.Body>
                                                 <Card.Title>{media.properties.title}</Card.Title>
                                                 <Card.Link href={media.properties.link}>Read More</Card.Link>

@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'Helvetica', sans-serif;
+}
+
+:root{
+    --font-color-white: #FFFFFF;
+    --font-color-black: #020F14;
+    --font-color-blue: #012E80;
+    --background-color-button: #012E80;
+    --background-color-retangle-one: #F5F5F5;
+    --background-color-retangle-two: #012E80;
+}
+
+
+/* ====================================================== */
+
+/* ---------- Navbar ---------- */
+
+.navbar-solution{
+    padding: 10px 0;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-solution .nav-link{
+    font-size: 18px;
+    margin-left: 40px;
+    color: var(--font-color-black);
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    transition: background-color 0.3s ease-in-out
+}
+
+/* ---------- End Navbar ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Solution Title ---------- */
+
+#solution-title-content{
+    margin-top: 6%;
+}
+
+/* ---------- End Solution Title ---------- */
+
+/* ====================================================== */

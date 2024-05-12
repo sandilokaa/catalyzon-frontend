@@ -15,7 +15,7 @@ import PertamudaImage from "../../assets/images/pertamuda-2.png";
 import GSMAImage from "../../assets/images/gsma-2.png";
 import ApecImage from "../../assets/images/apec-2.png";
 
-import "../../assets/css/style.css";
+import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const AwardsRecognitions = () => {

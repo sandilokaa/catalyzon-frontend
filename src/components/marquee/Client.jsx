@@ -20,7 +20,7 @@ import Client14 from "../../assets/images/shedisrupts.png";
 import Client15 from "../../assets/images/unilever.png";
 import Client16 from "../../assets/images/sre.png";
 
-import "../../assets/css/style.css";
+import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const MarqueeClient = () => {

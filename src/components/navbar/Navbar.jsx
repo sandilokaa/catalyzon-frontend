@@ -8,7 +8,7 @@ import {
 
 import CatalyzonLogo from "../../assets/images/catalyzon-logo.png";
 
-import "../../assets/css/style.css";
+import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const NavbarGeneral = () => {
@@ -40,11 +40,11 @@ const NavbarGeneral = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link className={scrolled ? "nav-link-scrolled" : "nav-link"}>About Us</Nav.Link>
-                        <Nav.Link className={scrolled ? "nav-link-scrolled" : "nav-link"}>Solutions</Nav.Link>
-                        <Nav.Link className={scrolled ? "nav-link-scrolled" : "nav-link"}>Portfolio</Nav.Link>
-                        <Nav.Link className={scrolled ? "nav-link-scrolled" : "nav-link"}>Media</Nav.Link>
-                        <Nav.Link className={scrolled ? "nav-link-scrolled" : "nav-link"}>Contact</Nav.Link>
+                        <Nav.Link href="/" className={scrolled ? "nav-link-scrolled" : "nav-link"}>About Us</Nav.Link>
+                        <Nav.Link href="/solution" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Solutions</Nav.Link>
+                        <Nav.Link href="#impact-content" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Portfolio</Nav.Link>
+                        <Nav.Link href="#media-content" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Media</Nav.Link>
+                        <Nav.Link href="#contact-content" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
