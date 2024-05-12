@@ -4,13 +4,15 @@ import {
     Col,
     Container,
     Image,
-    Button
+    Button,
+    Card
 } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { FacilitiesCollectionData } from "../../assets/data/facilities";
 import { SolutionsCollectionData } from "../../assets/data/solutions";
+import { MediaCollectionData } from "../../assets/data/media";
 
 import HomeLayout from "../../layouts/home/HomeLayout";
 import MarqueeClient from "../../components/marquee/Client";
@@ -20,6 +22,9 @@ import ClimateEmpowerment from "../../components/outlook/ClimateEmpowerment";
 import DigitalTransformation from "../../components/outlook/DigitalTransformation";
 import AwardsRecognitions from "../../components/award/AwardComponent";
 import SDGSDescribe from "../../components/sdgs/SDGSDescribe";
+import ImpactCard from "../../components/impact/ImpactCard";
+
+import SearchImpactIcon from "../../assets/images/search-impact-icon.png";
 
 import "../../assets/css/style.css";
 import "../../assets/css/swiper.css";
@@ -61,8 +66,8 @@ const Home = () => {
                         </Row>
                         <Row className="title-three">
                             <Col xs={12} xl={8}>
-                                <h5>We are dedicated to advancing sustainability in business through comprehensive solutions, 
-                                    encompassing decarbonization projects and digital innovations. Our approach involves 
+                                <h5>We are dedicated to advancing sustainability in business through comprehensive solutions,
+                                    encompassing decarbonization projects and digital innovations. Our approach involves
                                     thorough analysis of customer requirements to effectively reduce emissions throughout their operations.
                                 </h5>
                             </Col>
@@ -233,7 +238,7 @@ const Home = () => {
                             <p>Find out what awards and recognitisions we are.</p>
                         </Col>
                     </Row>
-                    <AwardsRecognitions/>
+                    <AwardsRecognitions />
                 </Container>
             </div>
 
@@ -246,8 +251,8 @@ const Home = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12} xl={{span: 8, offset: 2}}>
-                            <p>We are deeply committed to advancing the United Nations 
+                        <Col xs={12} xl={{ span: 8, offset: 2 }}>
+                            <p>We are deeply committed to advancing the United Nations
                                 Sustainable Development Goals (SDGs) through waste-to-energy solutions.
                             </p>
                         </Col>
@@ -269,7 +274,22 @@ const Home = () => {
 
             <div id="sdgs-describe-content">
                 <Container>
-                    <SDGSDescribe/>
+                    <SDGSDescribe />
+                </Container>
+            </div>
+
+            <div id="impact-content">
+                <Container>
+                    <Row className="impact-title-describe">
+                        <Col xs={12} xl={5}>
+                            <h1>Since 2022 the Catalyzon Program has had an Impact in Indonesia</h1>
+                            <p>See How Catalyzon Impacts 15 Clients and Partners. </p>
+                            <div className="btn-see-impact">
+                                <Image className="search-icon-impact" src={SearchImpactIcon} alt="search-impact-icon" /> <span>See Catalyzon Impact Through 2024</span>
+                            </div>
+                        </Col>
+                        <ImpactCard />
+                    </Row>
                 </Container>
             </div>
 
@@ -283,6 +303,38 @@ const Home = () => {
                     >
                         <MarqueeClient />
                     </Marquee>
+                </Container>
+            </div>
+
+            <div id="media-content">
+                <Container>
+                    <Row>
+                        <Col xs={12} xl={12}>
+                            <h1>WE PROUD OF</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} xl={{ span: 4, offset: 4 }}>
+                            <p>Our media who have covered our results and achievements so far.</p>
+                        </Col>
+                    </Row>
+                    <Row className="media-card">
+                        {
+                            MediaCollectionData.Collections.map((media) => {
+                                return (
+                                    <Col xs={12} xl={3} key={media.id} className="media-describe">
+                                        <Card className="border-0">
+                                            <Card.Img className="media-image" variant="top" src={media.properties.image} alt={media.properties.alt}/>
+                                            <Card.Body>
+                                                <Card.Title>{media.properties.title}</Card.Title>
+                                                <Card.Link href={media.properties.link}>Read More</Card.Link>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                )
+                            })
+                        }
+                    </Row>
                 </Container>
             </div>
 

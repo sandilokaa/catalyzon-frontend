@@ -8,6 +8,7 @@
 :root{
     --font-color-white: #FFFFFF;
     --font-color-black: #020F14;
+    --font-color-blue: #012E80;
     --background-color-button: #012E80;
     --background-color-retangle-one: #F5F5F5;
     --background-color-retangle-two: #012E80;
@@ -349,11 +350,13 @@
 #awards-recognitions-content .awards-recognitions-title h1{
     font-size: 54px;
     font-weight: 600;
+    color: var(--font-color-black);
 }
 
 #awards-recognitions-content .awards-recognitions-title p{
     font-size: 22px;
     font-weight: 300;
+    color: var(--font-color-black);
 }
 
 #awards-recognitions-content hr{
@@ -366,6 +369,7 @@
 
 #awards-recognitions-content .awards-describe h1{
     font-size: 28px;
+    color: var(--font-color-black);
 }
 
 #awards-recognitions-content button{
@@ -476,9 +480,85 @@
 #sdgs-describe-content .card-text{
     font-size: 20px;
     text-align: center;
+    color: var(--font-color-black);
 }
 
 /* ---------- End SDGS Describe Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Impact Content ---------- */
+
+#impact-content{
+    margin-top: 6%;
+}
+
+#impact-content .impact-title-describe{
+    align-items: center;
+}
+
+#impact-content h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#impact-content p{
+    margin-top: 4%;
+    font-size: 24px;
+    color: var(--font-color-black);
+}
+
+#impact-content .btn-see-impact{
+    margin-top: 8%;
+}
+
+#impact-content .search-icon-impact{
+    margin-top: -2%;
+    width: 25px;
+}
+
+#impact-content span{
+    font-size: 24px;
+    color: var(--font-color-blue);
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+#impact-content .card{
+    height: 100%;
+    border: none;
+    transition: 0.3s all ease-in-out;
+}
+
+#impact-content .card:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#impact-content .card-title{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#impact-content .card-text{
+    text-align: center;
+    font-size: 20px;
+    color: var(--font-color-black);
+}
+
+#impact-content .card-text span{
+    font-size: 12px;
+    color: var(--font-color-black);
+    margin-left: -2%;
+    font-weight: 600;
+}
+
+/* ---------- End Impact Content ---------- */
 
 /* ====================================================== */
 
@@ -509,5 +589,66 @@
 }
 
 /* ---------- End Client Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Media Content ---------- */
+
+#media-content{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+#media-content h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#media-content p{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color-black);
+}
+
+
+#media-content .media-card .card{
+    transition: 0.3s all ease-in-out;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#media-content .media-card .card:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#media-content .media-card .media-describe{
+    margin-top: 4%;
+}
+
+#media-content .media-card .media-image{
+    border-radius: 20px 20px;
+    padding: 4%;
+}
+
+#media-content .media-card .card-title{
+    font-weight: 600;
+}
+
+#media-content .media-card .card-link{
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* ---------- End Media Content ---------- */
 
 /* ====================================================== */
