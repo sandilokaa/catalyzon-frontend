@@ -36,30 +36,20 @@
         padding: 16% 0;
     }
     
-    .heading-title .title-one h5{
-        margin-top: 25%;
-        font-size: 20px;
+    .heading-title .title-one h1{
+        margin-top: 15%;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .heading-title .title-two h5{
+        font-size: 24px;
         font-weight: 500;
     }
     
-    .heading-title .title-two h1{
-        font-size: 84px;
-        font-weight: 700;
-    }
-    
-    .heading-title .title-two :nth-child(2){
-        display: flex;
-    }
-    
-    .heading-title .title-two :nth-child(2) .main-title-vector{
-        height: 40px;
-        width: 40px;
-        margin: auto 4%;
-    }
-    
     .heading-title .title-three h5{
-        margin-top: 6%;
-        font-size: 22px;
+        margin-top: 4%;
+        font-size: 18px;
         font-weight: 200;
     }
 
@@ -176,15 +166,16 @@
     #awards-recognitions-content .awards-describe h1{
         font-size: 24px;
     }
-    
-    #awards-recognitions-content button{
-        height: 40px;
-        width: 40%;
+
+    #awards-recognitions-content .awards-describe img{
+        width: 100px;
+        height: auto;
     }
     
-    #awards-recognitions-content button img{
-        height: 12px;
-        margin-left: 8%;
+    #awards-recognitions-content button{
+        margin-top: 16%;
+        height: 40px;
+        width: 40%;
     }
 
     /* ---------- End Awards & Recognitions Content ---------- */
@@ -194,53 +185,76 @@
 
     /* ====================================================== */
 
-    /* ---------- Contact Content ---------- */
+    /* ---------- SDGS Content ---------- */
 
-    #contact-content{
-        margin-top: 10%;
-    }
-    
-    #contact-content h1{
-        font-size: 78px;
-    }
-    
-    #contact-content img{
-        display: none;
-    }
-    
-    #contact-content p{
-        margin-bottom: 16%;
-        padding: 4% 0 0 0;
-        text-align: start;
-        font-size: 20px;
-    }
 
-    #contact-content .mouse-follower img{
-        display: inline-block;
-        height: 45px;
-        width: auto;
+    #sdgs-title-content{
+        margin-top: 12%;
+        position: relative;
+        overflow: hidden;
+        padding: 16% 0 16% 0;
     }
     
-    #contact-content .mouse-follower p{
-        color: var(--font-color-black);
-        font-size: 12px;
+    #sdgs-title-content .sdgs-title-background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('../images/sdgs-bg.png');
+        background-size: cover;
+    }
+    
+    #sdgs-title-content h1{
+        font-size: 34px;
+        color: var(--font-color-white);
+        text-align: center;
         font-weight: 600;
-        margin-top: 60%;
-        margin-left: 15%;
-        float: left;
     }
     
-    @keyframes grow {
-        from {
-            transform: scale(0);
-        }
-        to {
-            transform: scale(1);
-        }
+    #sdgs-title-content p{
+        margin-top: 2%;
+        color: var(--font-color-white);
+        text-align: center;
+        font-size: 18px;
     }
-
-    /* ---------- End Contact Content ---------- */
-
+    
+    #sdgs-title-content .btn-sdgs-title-solutions{
+        margin-top: 4%;
+        width: 100%;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: var(--font-color-black);
+        font-weight: 600;
+        transition: 0.3 all ease-in-out;
+    }
+    
+    #sdgs-title-content .btn-sdgs-title-solutions:hover{
+        background-color: var(--background-color-button);
+        color: var(--font-color-white);
+        border: 1px solid #012E80;
+    }
+    
+    #sdgs-title-content .btn-sdgs-title-learn-more{
+        margin-top: 4%;
+        width: 100%;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        color: var(--font-color-white);
+        font-weight: 600;
+        transition: 0.3 all ease-in-out;
+    }
+    
+    #sdgs-title-content .btn-sdgs-title-learn-more:hover{
+        background-color: var(--background-color-button);
+        color: var(--font-color-white);
+        border: 1px solid #012E80;
+    }
+    
+    /* ---------- End SDGS Content ---------- */
+    
     /* ====================================================== */
 
 

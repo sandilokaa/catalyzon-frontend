@@ -19,11 +19,7 @@ import RenewableEnergy from "../../components/outlook/RenewableEnergy";
 import ClimateEmpowerment from "../../components/outlook/ClimateEmpowerment";
 import DigitalTransformation from "../../components/outlook/DigitalTransformation";
 import AwardsRecognitions from "../../components/award/AwardComponent";
-
-import BackgroundImage from "../../assets/images/bg-main-content.png";
-import TitleVector from "../../assets/images/o-vector.png";
-import ArrowContactImage from "../../assets/images/arrow-contact.png";
-import ArrowContactButtonImage from "../../assets/images/arrow-contact-button.png";
+import SDGSDescribe from "../../components/sdgs/SDGSDescribe";
 
 import "../../assets/css/style.css";
 import "../../assets/css/swiper.css";
@@ -45,46 +41,42 @@ const Home = () => {
         setSelectedOutlookButton(outlookName);
     };
 
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleMouseMove = (event) => {
-        const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left;
-        const mouseY = event.clientY - rect.top;
-        setMousePosition({ x: mouseX, y: mouseY });
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
-
     return (
 
         <HomeLayout>
 
             <div id="main-content">
-                <div className="background-main-content" src={BackgroundImage}></div>
+                <div className="background-main-content"></div>
                 <Container className="heading-title">
                     <div className="head-title-main-content">
                         <Row className="title-one">
-                            <Col xs={12} xl={3}>
-                                <h5>Movement towards a sustainable prosperity</h5>
+                            <Col xs={12} xl={12}>
+                                <h1>Empowering Businesses for Environmental Improvement</h1>
                             </Col>
                         </Row>
                         <Row className="title-two">
-                            <Col xs={12} xl={5}>
-                                <h1>saving</h1>
-                            </Col>
-                            <Col xs={12} xl={7}>
-                                <Image className="main-title-vector" src={TitleVector} />
-                                <h1>nature </h1>
+                            <Col xs={12} xl={12}>
+                                <h5>Your Movement Towards Sustainability of Businesses Starts Here</h5>
                             </Col>
                         </Row>
                         <Row className="title-three">
-                            <Col xs={12} xl={4}>
-                                <h5>We are on a mission to provide a comprehensive waste-to-energy solution.</h5>
+                            <Col xs={12} xl={8}>
+                                <h5>We are dedicated to advancing sustainability in business through comprehensive solutions, 
+                                    encompassing decarbonization projects and digital innovations. Our approach involves 
+                                    thorough analysis of customer requirements to effectively reduce emissions throughout their operations.
+                                </h5>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs={6} xl={2}>
+                                <Button className="btn-solution">
+                                    Our Solution
+                                </Button>
+                            </Col>
+                            <Col xs={6} xl={2}>
+                                <Button className="btn-explore">
+                                    Explore Now
+                                </Button>
                             </Col>
                         </Row>
                     </div>
@@ -245,51 +237,40 @@ const Home = () => {
                 </Container>
             </div>
 
-            <div
-                id="contact-content"
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-            >
-                <div className="background-contact-content"></div>
+            <div id="sdgs-title-content">
+                <div className="sdgs-title-background"></div>
                 <Container>
                     <Row>
-                        <Col xs={12} xl={7}>
-                            <h1>HAVE A PROJECT IN MIND?</h1>
+                        <Col xs={12} xl={12}>
+                            <h1>Catalyzon advances global inclusion, sustainability, and growth.</h1>
                         </Col>
-                        <Col xs={12} xl={5}>
-                            <Row>
-                                <Col xs={12} xl={12} className="d-flex justify-content-end">
-                                    <Image src={ArrowContactImage} />
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col xs={12} xl={12} className="d-flex justify-content-end">
-                                    <p>Share your project idea with us! Should the partnership vibe not align, we’re glad to furnish you with valuable insight that could prove beneficial.</p>
-                                </Col>
-                            </Row>
+                    </Row>
+                    <Row>
+                        <Col xs={12} xl={{span: 8, offset: 2}}>
+                            <p>We are deeply committed to advancing the United Nations 
+                                Sustainable Development Goals (SDGs) through waste-to-energy solutions.
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={6} xl={6} className="d-flex justify-content-end">
+                            <Button className="btn-sdgs-title-solutions">
+                                View Solutions
+                            </Button>
+                        </Col>
+                        <Col xs={6} xl={6} className="d-flex justify-content-start">
+                            <Button className="btn-sdgs-title-learn-more">
+                                Learn More
+                            </Button>
                         </Col>
                     </Row>
                 </Container>
-                {isHovered && (
-                    <div
-                        className="mouse-follower"
-                        style={{
-                            backgroundColor: '#FFFFFF',
-                            position: 'absolute',
-                            left: mousePosition.x - 140 / 2,
-                            top: mousePosition.y - 140 / 2,
-                            width: '140px',
-                            height: '140px',
-                            borderRadius: '50%',
-                            pointerEvents: 'none',
-                            animation: 'grow 0.5s forwards',
-                            transition: 'left 0.1s, top 0.1s'
-                        }}
-                    >
-                        <Image src={ArrowContactButtonImage}/>
-                        <p>BOOK A CALL</p>
-                    </div>
-                )}
+            </div>
+
+            <div id="sdgs-describe-content">
+                <Container>
+                    <SDGSDescribe/>
+                </Container>
             </div>
 
             <div id="client-content">
