@@ -19,6 +19,11 @@ const Solution = () => {
 
     const navigate = useNavigate();
 
+    const handleClickButtonContact = () => {
+        const url = `https://web.whatsapp.com/send?phone=+6285811539501`;
+        window.open(url)
+    };
+
     return (
 
         <SolutionLayout>
@@ -41,12 +46,12 @@ const Solution = () => {
                     </Row>
                     <Row className="btn-additional">
                         <Col xs={6} xl={6} className="d-flex justify-content-end btn-aboutus">
-                            <Button>
+                            <Button onClick={() => navigate(`/`)}>
                                 About Us
                             </Button>
                         </Col>
                         <Col xs={6} xl={6} className="d-flex justify-content-start btn-contactus">
-                            <Button>
+                            <Button onClick={handleClickButtonContact}>
                                 Contact Us
                             </Button>
                         </Col>

@@ -17,7 +17,7 @@ const FooterComponent = () => {
     const handleClickButton = () => {
         const url = `https://web.whatsapp.com/send?phone=+6285811539501`;
         window.open(url)
-    }
+    };
 
     return (
 
