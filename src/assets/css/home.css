@@ -736,3 +736,165 @@
 /* ---------- End Footer Content ---------- */
 
 /* ====================================================== */
+
+
+/* ====================================================== */
+/* ====================================================== */
+
+/* ---------- SOLUTION PAGE ---------- */
+
+
+/* ====================================================== */
+
+/* ---------- Solution Title ---------- */
+
+#solution-title-content{
+    margin-top: 6%;
+    padding: 4% 0;
+}
+
+#solution-title-content h1{
+    font-size: 54px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--font-color-black);
+}
+
+#solution-title-content h1 span{
+    color: var(--font-color-white);
+    background-color: var(--background-color-retangle-two);
+}
+
+#solution-title-content p{
+    text-align: center;
+    font-size: 24px;
+    color: var(--font-color-black);
+}
+
+#solution-title-content .btn-additional{
+    margin-top: 2%;
+}
+
+#solution-title-content .btn-aboutus button{
+    width: 25%;
+    background-color: var(--background-color-button);
+    border: 1px solid #012E80;
+    border-radius: 20px;
+    color: var(--font-color-white);
+    transition: 0.3s all ease-in-out;
+}
+
+#solution-title-content .btn-aboutus button:hover{
+    background-color: #020F14;
+    border: 1px solid #020F14;
+    color: var(--font-color-white);
+}
+
+#solution-title-content .btn-contactus button{
+    width: 25%;
+    background-color: transparent;
+    border: 1px solid #020F14;
+    border-radius: 20px;
+    color: var(--font-color-black);
+    transition: 0.3s all ease-in-out;
+}
+
+#solution-title-content .btn-contactus button:hover{
+    background-color: var(--background-color-button);
+    border: 1px solid #012E80;
+    color: var(--font-color-white);
+}
+
+
+/* ---------- End Solution Title ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Partner Content ---------- */
+
+#partner-content{
+    margin-top: 6%;
+    position: relative;
+}
+
+#partner-content h1{
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--font-color-black);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+#partner-content p{
+    font-size: 24px;
+    color: var(--font-color-black);
+}
+
+/* ---------- End Partner Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Solution Card Content ---------- */
+
+#card-solution-content{
+    margin-top: 4%;
+}
+
+#card-solution-content .card-solution-describe{
+    margin-top: 2%;
+}
+
+#card-solution-content .card-solution-describe .solution-icon{
+    width: 50px;
+    border: 1px solid #020F14;
+    background-color: #020F14;
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+#card-solution-content .card-solution-describe .card-title{
+    font-weight: 600;
+    color: var(--font-color-black);
+    font-size: 24px;
+}
+
+#card-solution-content .card-solution-describe .card-text{
+    color: var(--font-color-black);
+}
+
+#card-solution-content .card-solution-describe .card-link{
+    color: var(--font-color-black);
+    font-weight: 600;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+#card-solution-content .card-solution-describe .card-link:hover{
+    border: 1px solid #012E80;
+    background-color: var(--background-color-button);
+    padding: 1%;
+    border-radius: 20px;
+    color: var(--font-color-white);
+}
+
+/* ---------- End Solution Card Content ---------- */
+
+/* ====================================================== */
+
+
+/* ---------- END SOLUTION PAGE ---------- */
+
+/* ====================================================== */
+/* ====================================================== */

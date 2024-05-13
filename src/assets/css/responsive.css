@@ -466,4 +466,122 @@
 
     /* ====================================================== */
 
+
+    /* ====================================================== */
+    /* ====================================================== */
+
+    /* ---------- SOLUTION PAGE ---------- */
+
+    /* ====================================================== */
+
+    /* ---------- Solution Title ---------- */
+
+    #solution-title-content{
+        margin-top: 30%;
+        padding: 8% 0;
+    }
+
+    #solution-title-content h1{
+        font-size: 34px;
+    }
+
+    #solution-title-content p{
+        font-size: 20px;
+    }
+
+    #solution-title-content .btn-additional{
+        margin-top: 4%;
+    }
+
+    #solution-title-content .btn-aboutus button{
+        width: 100%;
+    }
+    #solution-title-content .btn-contactus button{
+        width: 100%;
+    }
+
+    /* ---------- End Solution Title ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Partner Content ---------- */
+
+    #partner-content{
+        margin-top: 12%;
+    }
+
+    #partner-content h1{
+        font-size: 34px;
+        font-weight: 600;
+        color: var(--font-color-black);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+    #partner-content p{
+        font-size: 20px;
+        color: var(--font-color-black);
+        margin-top: 16%;
+    }
+
+    /* ---------- End Partner Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Solution Card Content ---------- */
+
+    #card-solution-content{
+        margin-top: 4%;
+    }
+
+    #card-solution-content .card-solution-describe{
+        margin-top: 4%;
+    }
+
+    #card-solution-content .card-solution-describe .solution-icon{
+        width: 40px;
+        border: 1px solid #020F14;
+        background-color: #020F14;
+        border-radius: 50%;
+        margin-top: 4%;
+        margin-left: 4%;
+        padding: 1%;
+    }
+
+    #card-solution-content .card-solution-describe .card-title{
+        margin-top: 2%;
+        font-weight: 600;
+        color: var(--font-color-black);
+        font-size: 22px;
+    }
+
+    #card-solution-content .card-solution-describe .card-text{
+        color: var(--font-color-black);
+    }
+
+    #card-solution-content .card-solution-describe .card-link{
+        color: var(--font-color-black);
+        font-weight: 600;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    /* ---------- End Solution Card Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ---------- END SOLUTION PAGE ---------- */
+
+    /* ====================================================== */
+    /* ====================================================== */
+
 }

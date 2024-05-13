@@ -8,7 +8,7 @@ import {
 
 import CatalyzonLogo from "../../assets/images/catalyzon-logo.png";
 
-import "../../assets/css/solution.css";
+import "../../assets/css/navbar-solution.css";
 import "../../assets/css/responsive.css";
 
 const NavbarSolution = () => {

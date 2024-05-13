@@ -2,7 +2,6 @@ import SolutionOneImage from "../images/service-one.png";
 import SolutionTwoImage from "../images/service-two.png"; 
 import SolutionThreeImage from "../images/service-three.png"; 
 import SolutionFourImage from "../images/service-four.png"; 
-import SolutionFiveImage from "../images/service-five.png"; 
 
 export const SolutionsCollectionData = {
     "type": "SolutionsCollection",
