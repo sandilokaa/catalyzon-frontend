@@ -852,6 +852,11 @@
     margin-top: 2%;
 }
 
+#card-solution-content .card-solution-describe .card{
+    height: 100%;
+    width: 100%;
+}
+
 #card-solution-content .card-solution-describe .solution-icon{
     width: 50px;
     border: 1px solid #020F14;

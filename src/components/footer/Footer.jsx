@@ -14,6 +14,11 @@ import "../../assets/css/responsive.css";
 
 const FooterComponent = () => {
 
+    const handleClickButton = () => {
+        const url = `https://web.whatsapp.com/send?phone=+6285811539501`;
+        window.open(url)
+    }
+
     return (
 
         <>
@@ -27,7 +32,7 @@ const FooterComponent = () => {
                     </Row>
                     <Row>
                         <Col xs={12} xl={{ span: 10, offset: 1 }} className="d-flex justify-content-center">
-                            <Button className="btn-contact">
+                            <Button className="btn-contact" onClick={handleClickButton}>
                                 Contact Us
                             </Button>
                         </Col>

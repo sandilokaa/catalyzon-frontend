@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
     Container,
     Nav,
@@ -12,6 +13,8 @@ import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const NavbarGeneral = () => {
+
+    const navigate = useNavigate();
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -40,8 +43,8 @@ const NavbarGeneral = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="/" className={scrolled ? "nav-link-scrolled" : "nav-link"}>About Us</Nav.Link>
-                        <Nav.Link href="/solution" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Solutions</Nav.Link>
+                        <Nav.Link onClick={() => navigate('/')} className={scrolled ? "nav-link-scrolled" : "nav-link"}>About Us</Nav.Link>
+                        <Nav.Link onClick={() => navigate('/solution')} className={scrolled ? "nav-link-scrolled" : "nav-link"}>Solutions</Nav.Link>
                         <Nav.Link href="#impact-content" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Portfolio</Nav.Link>
                         <Nav.Link href="#media-content" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Media</Nav.Link>
                         <Nav.Link href="#contact-content" className={scrolled ? "nav-link-scrolled" : "nav-link"}>Contact</Nav.Link>

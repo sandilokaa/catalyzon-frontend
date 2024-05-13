@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
     Row,
     Col,
@@ -33,6 +34,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Home = () => {
+
+    const navigate = useNavigate();
 
     const [selectedOutlookButton, setSelectedOutlookButton] = useState(null);
 
@@ -74,12 +77,12 @@ const Home = () => {
                         </Row>
                         <Row>
                             <Col xs={6} xl={2}>
-                                <Button className="btn-solution">
+                                <Button className="btn-solution" onClick={() => navigate('/solution')}>
                                     Our Solution
                                 </Button>
                             </Col>
                             <Col xs={6} xl={2}>
-                                <Button className="btn-explore">
+                                <Button className="btn-explore" href="#vision-missions-content">
                                     Explore Now
                                 </Button>
                             </Col>
@@ -259,7 +262,7 @@ const Home = () => {
                     </Row>
                     <Row>
                         <Col xs={6} xl={6} className="d-flex justify-content-end">
-                            <Button className="btn-sdgs-title-solutions">
+                            <Button className="btn-sdgs-title-solutions" onClick={() => navigate('/solution')}>
                                 View Solutions
                             </Button>
                         </Col>
@@ -327,7 +330,7 @@ const Home = () => {
                                             <Card.Img className="media-image" variant="top" src={media.properties.image} alt={media.properties.alt} />
                                             <Card.Body>
                                                 <Card.Title>{media.properties.title}</Card.Title>
-                                                <Card.Link href={media.properties.link}>Read More</Card.Link>
+                                                <Card.Link href={media.properties.link} target="_blank" rel="noopener noreferrer">Read More</Card.Link>
                                             </Card.Body>
                                         </Card>
                                     </Col>
