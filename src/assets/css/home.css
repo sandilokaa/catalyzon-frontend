@@ -215,122 +215,45 @@
 
 /* ====================================================== */
 
-/* ---------- Solutions & Facilities Content ---------- */
+/* ---------- Solutions Content ---------- */
 
-#solutions-facilities-content{
+#solutions-content{
     margin-top: 6%;
 }
 
-#solutions-facilities-content .solutions-facilities-describe{
-    display: flex;
-    justify-content: space-between;
+#solutions-content .solutions-swiper{
+    margin-top: 4%;
 }
 
-#solutions-facilities-content .solutions-facilities-describe .solutions-content,
-#solutions-facilities-content .solutions-facilities-describe .facilities-content{
-    width: calc(50% - 20px);
+#solutions-content .solutions-swiper h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--font-color-white);
 }
 
-#solutions-facilities-content .solutions-content{
-    padding: 2%;
-    background-color: var(--background-color-retangle-one);
-    border-radius: 20px;
-    margin-right: 5px;
+#solutions-content .solutions-swiper p{
+    margin-top: 2%;
+    font-size: 20px;
+    color: var(--font-color-white);
 }
 
-#solutions-facilities-content .solutions-content button,
-#solutions-facilities-content .facilities-content button 
-{
+#solutions-content .solutions-swiper button{
+    margin-top: 4%;
+    background-color: transparent;
     border-radius: 30px;
-    background-color: #FFFFFF;
+    width: 20%;
+    font-weight: 600;
+    color: var(--font-color-white);
     border: 1px solid #FFFFFF;
-    color: var(--font-color-black);
-    font-weight: 600;
+    transition: 0.3s all ease-in-out;
 }
 
-#solutions-facilities-content .solutions-content h5{
-    margin-top: 30%;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--font-color-black);
+#solutions-content .solutions-swiper button:hover{
+    background-color: #012E80;
+    border: 1px solid #012E80;
 }
 
-#solutions-facilities-content .solutions-content h4{
-    margin-top: 8%;
-    font-weight: 600;
-    font-size: 24px;
-    color: var(--font-color-black);
-}
-
-#solutions-facilities-content .solutions-content p{
-    margin-top: 8%;
-    font-size: 20px;
-    color: var(--font-color-black);
-    font-weight: 200;
-}
-
-#solutions-facilities-content .facilities-content{
-    padding: 2%;
-    background-color: var(--background-color-retangle-two);
-    border-radius: 20px;
-    margin-left: 5px;
-}
-
-
-#solutions-facilities-content .facilities-content h5{
-    margin-top: 30%;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--font-color-white);
-}
-
-#solutions-facilities-content .facilities-content h4{
-    margin-top: 8%;
-    font-weight: 600;
-    font-size: 24px;
-    color: var(--font-color-white);
-}
-
-#solutions-facilities-content .facilities-content p{
-    margin-top: 8%;
-    font-size: 20px;
-    color: var(--font-color-white);
-    font-weight: 200;
-}
-
-.swiper-slide {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-}
-
-
-.swiper-slide .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--font-color-white);
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    font-weight: 600;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 20px;
-}
-
-.swiper-slide:hover .overlay {
-    opacity: 1;
-    border-radius: 20px;
-}
-
-/* ---------- End Solutions & Facilities Content ---------- */
+/* ---------- End Solutions Content ---------- */
 
 /* ====================================================== */
 
@@ -750,7 +673,7 @@
 
 #solution-title-content{
     margin-top: 6%;
-    padding: 4% 0;
+    padding: 4% 0 0;
 }
 
 #solution-title-content h1{
@@ -775,7 +698,7 @@
     margin-top: 2%;
 }
 
-#solution-title-content .btn-aboutus button{
+#solution-title-content .btn-chooseus button{
     width: 25%;
     background-color: var(--background-color-button);
     border: 1px solid #012E80;
@@ -784,7 +707,7 @@
     transition: 0.3s all ease-in-out;
 }
 
-#solution-title-content .btn-aboutus button:hover{
+#solution-title-content .btn-chooseus button:hover{
     background-color: #020F14;
     border: 1px solid #020F14;
     color: var(--font-color-white);
@@ -813,35 +736,6 @@
 
 /* ====================================================== */
 
-/* ---------- Partner Content ---------- */
-
-#partner-content{
-    margin-top: 6%;
-    position: relative;
-}
-
-#partner-content h1{
-    font-size: 54px;
-    font-weight: 600;
-    color: var(--font-color-black);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-}
-
-#partner-content p{
-    font-size: 24px;
-    color: var(--font-color-black);
-}
-
-/* ---------- End Partner Content ---------- */
-
-/* ====================================================== */
-
-
-/* ====================================================== */
-
 /* ---------- Solution Card Content ---------- */
 
 #card-solution-content{
@@ -857,10 +751,15 @@
     width: 100%;
 }
 
+#card-solution-content .card-solution-describe .card:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
 #card-solution-content .card-solution-describe .solution-icon{
     width: 50px;
-    border: 1px solid #020F14;
-    background-color: #020F14;
+    border: 1px solid #012E80;
+    background-color: #012E80;
     border-radius: 50%;
     margin-top: 2%;
     margin-left: 2%;
@@ -878,7 +777,7 @@
 }
 
 #card-solution-content .card-solution-describe .card-link{
-    color: var(--font-color-black);
+    color: var(--font-color-blue);
     font-weight: 600;
     list-style: none;
     text-decoration: none;
@@ -892,6 +791,54 @@
     padding: 1%;
     border-radius: 20px;
     color: var(--font-color-white);
+}
+
+/* ---------- End Solution Card Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Partner Content ---------- */
+
+#partner-content{
+    margin-top: 6%;
+}
+
+#partner-content h1{
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--font-color-black);
+    text-align: center;
+    margin: auto 0;
+}
+
+/* ---------- End Partner Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Solution Card Content ---------- */
+
+#card-point-solution{
+    margin-top: 6%;
+}
+
+#card-point-solution .card{
+    height: 100%;
+}
+
+#card-point-solution .card .card-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#card-point-solution .card .card-text{
+    color: var(--font-color-black);
 }
 
 /* ---------- End Solution Card Content ---------- */

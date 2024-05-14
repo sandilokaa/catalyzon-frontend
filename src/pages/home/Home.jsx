@@ -11,9 +11,8 @@ import {
 import Marquee from "react-fast-marquee";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import { FacilitiesCollectionData } from "../../assets/data/facilities";
-import { SolutionsCollectionData } from "../../assets/data/solutions";
 import { MediaCollectionData } from "../../assets/data/media";
+import { SolutionsCollectionData } from "../../assets/data/solutionSwiper";
 
 import HomeLayout from "../../layouts/home/HomeLayout";
 import MarqueeClient from "../../components/marquee/Client";
@@ -154,78 +153,34 @@ const Home = () => {
                 </Container>
             </div>
 
-            <div id="solutions-facilities-content">
+            <div id="solutions-content">
                 <Container>
-                    <Row className="solutions-facilities-describe">
-                        <Col xs={12} xl={6} className="solutions-content">
-                            <Row>
-                                <Col xs={12} xl={6}>
-                                    <Button>
-                                        solutions
-                                    </Button>
-                                    <h5>Our solutions.</h5>
-                                    <h4>What we solutions.</h4>
-                                    <p>We provide the best quality products through well process control and laboratory tested.</p>
-                                </Col>
-                                <Col xs={12} xl={6}>
-                                    <Swiper
-                                        spaceBetween={20}
-                                        slidesPerView={2}
-                                        direction="vertical"
-                                        scrollbar={{ draggable: true }}
-                                        pagination={{
-                                            clickable: true,
-                                        }}
-                                        modules={[Pagination]}
-                                        style={{ height: '325px' }}
-                                        className="swiper"
-                                    >
-                                        {
-                                            SolutionsCollectionData.Collections.map((solutions) => {
-                                                return (
-                                                    <SwiperSlide key={solutions.id} className="swiper-slide">
-                                                        <Image src={solutions.properties.image} alt={solutions.properties.alt} />
-                                                        <div className="overlay">{solutions.properties.title}</div>
-                                                    </SwiperSlide>
-                                                )
-                                            })
-                                        }
-                                    </Swiper>
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col xs={12} xl={6} className="facilities-content">
-                            <Row>
-                                <Col xs={12} xl={6}>
-                                    <Button>
-                                        facilities
-                                    </Button>
-                                    <h5>Our facilities.</h5>
-                                    <h4>What we facilities.</h4>
-                                    <p>We provide the best facitilies to assist you in facing this solution.</p>
-                                </Col>
-                                <Col xs={12} xl={6}>
-                                    <Swiper
-                                        spaceBetween={50}
-                                        slidesPerView={1}
-                                        pagination={{
-                                            clickable: true,
-                                        }}
-                                        modules={[Pagination]}
-                                    >
-                                        {
-                                            FacilitiesCollectionData.Collections.map((facilities) => {
-                                                return (
-                                                    <SwiperSlide key={facilities.id} className="swiper-slide">
-                                                        <Image src={facilities.properties.image} alt={facilities.properties.alt} className="image-with-overlay" />
-                                                        <div className="overlay">{facilities.properties.title}</div>
-                                                    </SwiperSlide>
-                                                )
-                                            })
-                                        }
-                                    </Swiper>
-                                </Col>
-                            </Row>
+                    <Row className="solutions-swiper">
+                        <Col xs={12} xl={12}>
+                            <Swiper
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Pagination]}
+                            >
+                                {
+                                    SolutionsCollectionData.Collections.map((solution) => {
+                                        return (
+                                            <SwiperSlide key={solution.id} style={{ backgroundImage: `url(${solution.properties.image})`, backgroundSize: 'cover' ,borderRadius: '30px', padding: '6%' }}>
+                                                <Row className="solutions-detail">
+                                                    <Col xs={12} xl={8}>
+                                                        <h1>{solution.properties.title}</h1>
+                                                        <p>{solution.properties.description}</p>
+                                                        <Button onClick={() => navigate(`${solution.properties.link}`)}>
+                                                            Learn More
+                                                        </Button>
+                                                    </Col>
+                                                </Row>
+                                            </SwiperSlide>
+                                        )
+                                    }
+                                )}
+                            </Swiper>
                         </Col>
                     </Row>
                 </Container>

@@ -11,6 +11,7 @@ import {
 import SolutionLayout from "../../layouts/solution/SolutionLayout";
 
 import { SolutionsCollectionData } from "../../assets/data/solutionPageData";
+import { SolutionsPointCollectionData } from "../../assets/data/solutionPoint";
 
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
@@ -33,43 +34,27 @@ const Solution = () => {
                     <Row>
                         <Col xs={12} xl={{ span: 8, offset: 2 }}>
                             <h1>
-                                Driving  <span>Sustainable</span> Change with Catalyzon Premium Solutions
+                                Driving  <span>Sustainable</span> Change with Catalyzon Solutions
                             </h1>
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={12} xl={{ span: 6, offset: 3 }}>
                             <p>
-                                We provide the best quality products through well process control and laboratory tested.
+                                We collaborate closely with our clients to understand their unique needs and develop sustainable, eco-friendly solutions.
                             </p>
                         </Col>
                     </Row>
                     <Row className="btn-additional">
-                        <Col xs={6} xl={6} className="d-flex justify-content-end btn-aboutus">
-                            <Button onClick={() => navigate(`/`)}>
-                                About Us
+                        <Col xs={6} xl={6} className="d-flex justify-content-end btn-chooseus">
+                            <Button>
+                                Why Choose Us
                             </Button>
                         </Col>
                         <Col xs={6} xl={6} className="d-flex justify-content-start btn-contactus">
                             <Button onClick={handleClickButtonContact}>
                                 Contact Us
                             </Button>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-
-            <div id="partner-content">
-                <Container>
-                    <Row>
-                        <Col xs={12} xl={7}>
-                            <h1>Why Should You Partner?</h1>
-                        </Col>
-                        <Col xs={12} xl={5}>
-                            <p>
-                                Catalyzon is a trusted partner in driving curiosity, offering
-                                innovative and sustainable solutions through a collaborative partnership approach.
-                            </p>
                         </Col>
                     </Row>
                 </Container>
@@ -83,13 +68,46 @@ const Solution = () => {
                                 return (
                                     <Col xs={12} xl={6} className="card-solution-describe" key={solution.id}>
                                         <Card>
-                                            <Card.Img variant="top" className="solution-icon" src={solution.properties.image}/>
+                                            <Card.Img variant="top" className="solution-icon" src={solution.properties.icon} />
                                             <Card.Body>
                                                 <Card.Title>{solution.properties.title}</Card.Title>
                                                 <Card.Text>
                                                     {solution.properties.decription}
                                                 </Card.Text>
                                                 <Card.Link onClick={() => navigate(`/solution/detail/${solution.id}`)}>See Solution</Card.Link>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                )
+                            })
+                        }
+                    </Row>
+                </Container>
+            </div>
+
+            <div id="partner-content">
+                <Container>
+                    <Row>
+                        <Col xs={12} xl={12}>
+                            <h1>Why Should You Partner With Us?</h1>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div id="card-point-solution">
+                <Container>
+                    <Row>
+                        {
+                            SolutionsPointCollectionData.Collections.map((solution) => {
+                                return (
+                                    <Col xs={12} xl={3} key={solution.id} className="point-describe">
+                                        <Card>
+                                            <Card.Body>
+                                                <Card.Title>{solution.properties.title}</Card.Title>
+                                                <Card.Text>
+                                                    {solution.properties.decription}
+                                                </Card.Text>
                                             </Card.Body>
                                         </Card>
                                     </Col>

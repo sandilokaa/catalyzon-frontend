@@ -98,42 +98,32 @@
 
     /* ====================================================== */
 
-    /* ---------- Solutions & Facilities Content ---------- */
+    /* ---------- Solutions Content ---------- */
 
-    #solutions-facilities-content{
+    #solutions-content{
         margin-top: 12%;
-        margin-bottom: 6%;
+    }
+    
+    #solutions-content .solutions-swiper{
+        margin-top: 4%;
+    }
+    
+    #solutions-content .solutions-swiper h1{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--font-color-white);
+    }
+    
+    #solutions-content .solutions-swiper p{
+        margin-top: 2%;
+        color: var(--font-color-white);
+    }
+    
+    #solutions-content .solutions-swiper button{
+        width: 50%;
     }
 
-    #solutions-facilities-content .solutions-facilities-describe .solutions-content,
-    #solutions-facilities-content .solutions-facilities-describe .facilities-content{
-        width: calc(100% - 20px);
-        margin: 2% auto;
-        padding: 4%;
-    }
-
-    #solutions-facilities-content .solutions-content h5,
-    #solutions-facilities-content .facilities-content h5
-    {
-        margin-top: 15%;
-    }
-
-    #solutions-facilities-content .solutions-content h4,
-    #solutions-facilities-content .facilities-content h4
-    {
-        font-size: 22px;
-    }
-
-    #solutions-facilities-content .solutions-content p,
-    #solutions-facilities-content .facilities-content p{
-        font-size: 18px;
-    }
-
-    .swiper-slide .overlay {
-        font-size: 1.1rem;
-    }
-
-    /* ---------- End Solutions & Facilities Content ---------- */
+    /* ---------- End Solutions Content ---------- */
 
     /* ====================================================== */
 
@@ -493,7 +483,7 @@
         margin-top: 4%;
     }
 
-    #solution-title-content .btn-aboutus button{
+    #solution-title-content .btn-chooseus button{
         width: 100%;
     }
     #solution-title-content .btn-contactus button{
@@ -501,35 +491,6 @@
     }
 
     /* ---------- End Solution Title ---------- */
-
-    /* ====================================================== */
-
-
-    /* ====================================================== */
-
-    /* ---------- Partner Content ---------- */
-
-    #partner-content{
-        margin-top: 12%;
-    }
-
-    #partner-content h1{
-        font-size: 34px;
-        font-weight: 600;
-        color: var(--font-color-black);
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin: 0;
-    }
-
-    #partner-content p{
-        font-size: 20px;
-        color: var(--font-color-black);
-        margin-top: 16%;
-    }
-
-    /* ---------- End Partner Content ---------- */
 
     /* ====================================================== */
 
@@ -548,8 +509,6 @@
 
     #card-solution-content .card-solution-describe .solution-icon{
         width: 40px;
-        border: 1px solid #020F14;
-        background-color: #020F14;
         border-radius: 50%;
         margin-top: 4%;
         margin-left: 4%;
@@ -572,6 +531,41 @@
         font-weight: 600;
         list-style: none;
         text-decoration: none;
+    }
+
+    /* ---------- End Solution Card Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Partner Content ---------- */
+
+    #partner-content{
+        margin-top: 12%;
+    }
+
+    #partner-content h1{
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    /* ---------- End Partner Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Solution Card Content ---------- */
+
+    #card-point-solution{
+        margin-top: 8%;
+    }
+
+    #card-point-solution .point-describe{
+        margin-top: 4%;
     }
 
     /* ---------- End Solution Card Content ---------- */
