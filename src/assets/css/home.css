@@ -5,6 +5,10 @@
     font-family: 'Helvetica', sans-serif;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 :root{
     --font-color-white: #FFFFFF;
     --font-color-black: #020F14;
@@ -20,6 +24,8 @@
 /* ---------- Navbar ---------- */
 
 .navbar{
+    margin-left: 0;
+    width: 100%;
     padding: 10px 0;
     height: 90px;
     background-color: transparent;
@@ -27,6 +33,7 @@
 }
 
 .navbar-scrolled {
+    width: 100%;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
@@ -842,6 +849,119 @@
 }
 
 /* ---------- End Solution Card Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Solution Detail Title Content ---------- */
+
+#solution-detail-title-content{
+    margin-top: 6%;
+    padding: 2% 0;
+}
+
+#solution-detail-title-content .solution-head-main{
+    margin: auto 0;
+}
+
+#solution-detail-title-content h6{
+    color: var(--font-color-black);
+}
+
+#solution-detail-title-content h1{
+    margin-top: 6%;
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#solution-detail-title-content h5{
+    color: var(--font-color-black);
+}
+
+#solution-detail-title-content .btn-learn-more{
+    margin-top: 4%;
+    background-color: var(--background-color-button);
+    border: 1px solid #012E80;
+    border-radius: 20px;
+    width: 20%;
+    transition: 0.3s all ease-in-out;
+}
+
+#solution-detail-title-content .btn-learn-more:hover{
+    background-color: transparent;
+    border: 1px solid #020F14;
+    color: var(--font-color-black);
+}
+
+/* ---------- End Solution Detail Title Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Solution Detail Product Content ---------- */
+
+#solution-detail-product-content{
+    margin-top: 4%;
+}
+
+#solution-detail-product-content .product-title h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#solution-detail-product-content .product-detail{
+    margin-top: 6%;
+}
+
+#solution-detail-product-content .product-detail h3{
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#solution-detail-product-content .product-detail p{
+    color: var(--font-color-black);
+}
+
+#solution-detail-product-content .product-title-benefit{
+    margin-top: 6%;
+}
+
+#solution-detail-product-content .product-title-benefit h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#solution-detail-product-content .product-excellence{
+    margin-top: 2%;
+}
+
+#solution-detail-product-content .product-excellence-card{
+    margin-top: 2%;
+}
+
+#solution-detail-product-content .product-excellence-card .card{
+    height: 100%;
+}
+
+#solution-detail-product-content .product-excellence-card .card-title{
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#solution-detail-product-content .product-excellence-card .card-text{
+    color: var(--font-color-black);
+}
+
+/* ---------- End Solution Detail Product Content ---------- */
 
 /* ====================================================== */
 

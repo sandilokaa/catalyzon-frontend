@@ -36,7 +36,7 @@ export const SolutionsCollectionData = {
                 icon: SolutionThreeIcon,
                 title: "Event, Training, and Community Development",
                 alt: "Event, Training, and Community Development Image",
-                decription: "Our Event, Training, and Community Development Service is an essential part of our commitment to advancing sustainability in business. This service is designed to empower businesses and communities through educational initiatives, engagement events, and development programs. "
+                decription: "Our Event, Training, and Community Development Service is an essential part of our commitment to advancing sustainability in business. This service is designed to empower businesses and communities through educational initiatives, engagement events, and development programs."
             }
         },
         {

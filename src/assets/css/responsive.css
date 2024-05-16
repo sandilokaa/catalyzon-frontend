@@ -573,6 +573,75 @@
     /* ====================================================== */
 
 
+    /* ====================================================== */
+
+    /* ---------- Solution Detail Title Content ---------- */
+
+    #solution-detail-title-content{
+        margin-top: 12%;
+    }
+
+    #solution-detail-title-content h6{
+        margin-top: 20%;
+    }
+
+    #solution-detail-title-content img{
+        margin-top: 12%;
+        width: 100% !important;
+    }
+
+    #solution-detail-title-content h1{
+        margin-top: 8%;
+        font-size: 38px;
+    }
+
+    #solution-detail-title-content .btn-learn-more{
+        margin-top: 6%;
+        width: 50%;
+    }
+
+    /* ---------- End Solution Detail Title Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Solution Detail Product Content ---------- */
+
+    #solution-detail-product-content{
+        margin-top: 24%;
+    }
+
+    #solution-detail-product-content .product-title h1{
+        font-size: 24px;
+    }
+
+    #solution-detail-product-content .product-detail{
+        margin-top: 12%;
+    }
+
+    #solution-detail-product-content .product-title-benefit{
+        margin-top: 12%;
+    }
+
+    #solution-detail-product-content .product-title-benefit h1{
+        font-size: 22px;
+    }
+
+    #solution-detail-product-content .product-excellence{
+        margin-top: 4%;
+    }
+
+    #solution-detail-product-content .product-excellence-card{
+        margin-top: 4%;
+    }
+
+    /* ---------- End Solution Detail Product Content ---------- */
+
+    /* ====================================================== */
+
+
     /* ---------- END SOLUTION PAGE ---------- */
 
     /* ====================================================== */
