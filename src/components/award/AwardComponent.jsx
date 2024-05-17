@@ -6,14 +6,14 @@ import {
     Button
 } from "react-bootstrap";
 
-import KUIAImage from "../../assets/images/kuia.png";
-import IntoqImage from "../../assets/images/intoc.png";
-import ShellImage from "../../assets/images/shell.png";
-import MIICAImage from "../../assets/images/miica.png";
-import TummiadImage from "../../assets/images/tummiad.png";
-import PertamudaImage from "../../assets/images/pertamuda-2.png";
-import GSMAImage from "../../assets/images/gsma-2.png";
-import ApecImage from "../../assets/images/apec-2.png";
+import KUIAImage from "../../assets/images/award/kuia.png";
+import IntoqImage from "../../assets/images/award/intoc.png";
+import ShellImage from "../../assets/images/award/shell.png";
+import MIICAImage from "../../assets/images/award/miica.png";
+import TummiadImage from "../../assets/images/award/tummiad.png";
+import PertamudaImage from "../../assets/images/award/pertamuda-2.png";
+import GSMAImage from "../../assets/images/award/gsma-2.png";
+import ApecImage from "../../assets/images/award/apec-2.png";
 
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";

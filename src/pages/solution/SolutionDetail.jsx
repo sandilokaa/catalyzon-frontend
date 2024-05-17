@@ -38,7 +38,7 @@ const SolutionDetail = () => {
                                             <h6>Our Solution</h6>
                                             <h1>{solution.properties.title}</h1>
                                             <h5>{solution.properties.decription}</h5>
-                                            <Button className="btn-learn-more">
+                                            <Button className="btn-learn-more" href="#solution-detail-product-content">
                                                 Learn More
                                             </Button>
                                         </Col>
@@ -61,8 +61,9 @@ const SolutionDetail = () => {
                                             </Row>
                                             <Row className="product-detail">
                                                 <Col xs={12} xl={6}>
+                                                    <Image src={product.productImage}/>
                                                 </Col>
-                                                <Col xs={12} xl={6}>
+                                                <Col xs={12} xl={6} className="product-detail-head">
                                                     <h3>{product.productName}</h3>
                                                     <h5>{product.productDescribe}</h5>
                                                 </Col>
@@ -86,6 +87,7 @@ const SolutionDetail = () => {
                                                     </Col>
                                                 ))}
                                             </Row>
+                                            <hr />
                                         </Container>
                                     </div>
                                 )

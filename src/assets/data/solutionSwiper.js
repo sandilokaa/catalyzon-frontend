@@ -1,7 +1,7 @@
-import SolutionOneImage from "../images/solution-one.png"; 
-import SolutionTwoImage from "../images/solution-two.png"; 
-import SolutionThreeImage from "../images/solution-three.png"; 
-import SolutionFourImage from "../images/solution-four.png"; 
+import SolutionOneImage from "../images/background/solution-one.png"; 
+import SolutionTwoImage from "../images/background/solution-two.png"; 
+import SolutionThreeImage from "../images/background/solution-three.png"; 
+import SolutionFourImage from "../images/background/solution-four.png"; 
 
 export const SolutionsCollectionData = {
     "type": "SolutionsCollection",

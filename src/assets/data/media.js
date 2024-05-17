@@ -1,7 +1,7 @@
-import MediaOneImage from "../images/media-one.png";
-import MediaTwoImage from "../images/media-two.png";
-import MediaThreeImage from "../images/media-three.png";
-import MediaFourImage from "../images/media-four.png";
+import MediaOneImage from "../images/media/media-one.png";
+import MediaTwoImage from "../images/media/media-two.png";
+import MediaThreeImage from "../images/media/media-three.png";
+import MediaFourImage from "../images/media/media-four.png";
 
 export const MediaCollectionData = {
     "type": "MediaCollection",

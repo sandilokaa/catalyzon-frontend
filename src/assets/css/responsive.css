@@ -185,21 +185,8 @@
         padding: 16% 0 16% 0;
     }
     
-    #sdgs-title-content .sdgs-title-background{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-image: url('../images/sdgs-bg.png');
-        background-size: cover;
-    }
-    
     #sdgs-title-content h1{
         font-size: 34px;
-        color: var(--font-color-white);
-        text-align: center;
-        font-weight: 600;
     }
     
     #sdgs-title-content p{
@@ -212,35 +199,12 @@
     #sdgs-title-content .btn-sdgs-title-solutions{
         margin-top: 4%;
         width: 100%;
-        border-radius: 20px;
-        background-color: #FFFFFF;
-        border: 1px solid #FFFFFF;
-        color: var(--font-color-black);
-        font-weight: 600;
-        transition: 0.3 all ease-in-out;
     }
     
-    #sdgs-title-content .btn-sdgs-title-solutions:hover{
-        background-color: var(--background-color-button);
-        color: var(--font-color-white);
-        border: 1px solid #012E80;
-    }
     
     #sdgs-title-content .btn-sdgs-title-learn-more{
         margin-top: 4%;
         width: 100%;
-        border-radius: 20px;
-        background-color: transparent;
-        border: 1px solid #FFFFFF;
-        color: var(--font-color-white);
-        font-weight: 600;
-        transition: 0.3 all ease-in-out;
-    }
-    
-    #sdgs-title-content .btn-sdgs-title-learn-more:hover{
-        background-color: var(--background-color-button);
-        color: var(--font-color-white);
-        border: 1px solid #012E80;
     }
     
     /* ---------- End SDGS Content ---------- */
@@ -621,6 +585,15 @@
         margin-top: 12%;
     }
 
+    #solution-detail-product-content .product-detail img{
+        width: 100%;
+    }
+    
+    #solution-detail-product-content .product-detail .product-detail-head{
+        margin-top: 12%;
+    }
+    
+
     #solution-detail-product-content .product-title-benefit{
         margin-top: 12%;
     }
@@ -635,6 +608,10 @@
 
     #solution-detail-product-content .product-excellence-card{
         margin-top: 4%;
+    }
+
+    #solution-detail-product-content hr{
+        margin-top: 12%;
     }
 
     /* ---------- End Solution Detail Product Content ---------- */

@@ -75,7 +75,7 @@ body, html {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('../images/bg-main-content.png');
+    background-image: url('../images/background/bg-main-content.png');
     background-size: cover;
 }
 
@@ -328,7 +328,7 @@ body, html {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('../images/sdgs-bg.png');
+    background-image: url('../images/background/sdgs-bg.png');
     background-size: cover;
 }
 
@@ -702,7 +702,7 @@ body, html {
     margin-top: 2%;
 }
 
-#solution-title-content .btn-chooseus button{
+#solution-title-content .btn-chooseus{
     width: 25%;
     background-color: var(--background-color-button);
     border: 1px solid #012E80;
@@ -711,13 +711,13 @@ body, html {
     transition: 0.3s all ease-in-out;
 }
 
-#solution-title-content .btn-chooseus button:hover{
+#solution-title-content .btn-chooseus:hover{
     background-color: #020F14;
     border: 1px solid #020F14;
     color: var(--font-color-white);
 }
 
-#solution-title-content .btn-contactus button{
+#solution-title-content .btn-contactus{
     width: 25%;
     background-color: transparent;
     border: 1px solid #020F14;
@@ -726,7 +726,7 @@ body, html {
     transition: 0.3s all ease-in-out;
 }
 
-#solution-title-content .btn-contactus button:hover{
+#solution-title-content .btn-contactus:hover{
     background-color: var(--background-color-button);
     border: 1px solid #012E80;
     color: var(--font-color-white);
@@ -917,6 +917,15 @@ body, html {
     margin-top: 6%;
 }
 
+#solution-detail-product-content .product-detail img{
+    width: 90%;
+    border-radius: 30px;
+}
+
+#solution-detail-product-content .product-detail .product-detail-head{
+    margin: auto 0;
+}
+
 #solution-detail-product-content .product-detail h3{
     font-weight: 600;
     color: var(--font-color-black);
@@ -956,6 +965,10 @@ body, html {
 
 #solution-detail-product-content .product-excellence-card .card-text{
     color: var(--font-color-black);
+}
+
+#solution-detail-product-content hr{
+    margin-top: 6%;
 }
 
 /* ---------- End Solution Detail Product Content ---------- */

@@ -1,7 +1,7 @@
-import SolutionOneIcon from "../images/service-icon-one.png"; 
-import SolutionTwoIcon from "../images/service-icon-two.png"; 
-import SolutionThreeIcon from "../images/service-icon-three.png"; 
-import SolutionFourIcon from "../images/service-icon-four.png";
+import SolutionOneIcon from "../images/icon/service-icon-one.png"; 
+import SolutionTwoIcon from "../images/icon/service-icon-two.png"; 
+import SolutionThreeIcon from "../images/icon/service-icon-three.png"; 
+import SolutionFourIcon from "../images/icon/service-icon-four.png";
 
 export const SolutionsCollectionData = {
     "type": "SolutionsCollection",

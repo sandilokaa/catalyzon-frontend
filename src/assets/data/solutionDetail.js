@@ -1,5 +1,25 @@
-import SolutionOneIcon from "../images/service-icon-one.png"; 
-import WMS1Image from "../images/wms-1.png";
+import SolutionOneIcon from "../images/icon/service-icon-one.png"; 
+
+import WMS1Image from "../images/solution/wms-1.png";
+import WMSPrd1Image from "../images/solution/wms-prd-1.png";
+import WMSPrd2Image from "../images/solution/wms-prd-2.png";
+import WMSPrd3Image from "../images/solution/wms-prd-3.png";
+
+import WES1Image from "../images/solution/wes-1.png";
+import WESPrd1Image from "../images/solution/wes-prd-1.png";
+import WESPrd2Image from "../images/solution/wes-prd-2.png";
+import WESPrd3Image from "../images/solution/wes-prd-3.png";
+import WESPrd4Image from "../images/solution/wes-prd-4.png";
+import WESPrd5Image from "../images/solution/wes-prd-5.png";
+
+import ETD1Image from "../images/solution/etd-1.png";
+import ETDPrd1Image from "../images/solution/etd-prd-1.png";
+import ETDPrd2Image from "../images/solution/etd-prd-2.png";
+import ETDPrd3Image from "../images/solution/etd-prd-3.png";
+
+import DC1Image from "../images/solution/dc-1.png";
+import DCPrd1Image from "../images/solution/dc-prd-1.png";
+import DCPrd2Image from "../images/solution/dc-prd-2.png";
 
 export const SolutionsDetailData = {
     "type": "SolutionsCollection",
@@ -18,7 +38,7 @@ export const SolutionsDetailData = {
                         id: "1",
                         question: "Is your company aiming to revolutionize waste management practices to reduce costs and enhance sustainability?",
                         productName: "Waste Collection Service",
-                        productImage: SolutionOneIcon,
+                        productImage: WMSPrd1Image,
                         productDescribe: "Waste Collection Service simplifies household and commercial waste management with regular pickups, waste sorting, and recycling program support, ensuring environmental cleanliness and public health.",
                         excellence: [
                             {
@@ -47,7 +67,7 @@ export const SolutionsDetailData = {
                         id: "2",
                         question: "What is the main focus of Waste Transportation Service?",
                         productName: "Waste Transportation Service",
-                        productImage: SolutionOneIcon,
+                        productImage: WMSPrd2Image,
                         productDescribe: "Waste Transportation Service is a service that provides transportation for the disposal of waste from one location to another. This service is designed to assist companies and institutions in managing their waste efficiently and environmentally friendly.",
                         excellence: [
                             {
@@ -76,7 +96,7 @@ export const SolutionsDetailData = {
                         id: "3",
                         question: "How does the service ensure that the products produced meet sustainability and environmentally friendly standards?",
                         productName: "Waste Processing Service",
-                        productImage: SolutionOneIcon,
+                        productImage: WMSPrd3Image,
                         productDescribe: "Waste Processing Service provides efficient and environmentally friendly solutions for waste management and processing. This service encompasses processes from waste sorting to producing environmentally friendly products or reusable raw materials.",
                         excellence: [
                             {
@@ -109,7 +129,7 @@ export const SolutionsDetailData = {
             id: "2",
             properties:
             {
-                mainImage: SolutionOneIcon,
+                mainImage: WES1Image,
                 title: "Waste to Energy Project",
                 alt: "Waste to Energy Project Image",
                 decription: "Our Waste to Energy Project is a pivotal element of our commitment to advancing sustainability in business. This project focuses on transforming waste materials into valuable energy resources, thereby reducing environmental impact and promoting resource efficiency.",
@@ -118,7 +138,7 @@ export const SolutionsDetailData = {
                         id: "1",
                         question: "What are the benefits in waste management and sustainable energy production?",
                         productName: "Biogas Unit",
-                        productImage: SolutionOneIcon,
+                        productImage: WESPrd1Image,
                         productDescribe: "Biogas Unit is an installation or system designed to produce biogas through the decomposition process of organic biomass such as agricultural waste, animal waste, or food waste.",
                         excellence: [
                             {
@@ -147,7 +167,7 @@ export const SolutionsDetailData = {
                         id: "2",
                         question: "How does the oil produced from the Waste-to-Refined Oil process contribute to reducing carbon emissions compared to conventional fossil fuels?",
                         productName: "Waste-to-Refined Oil",
-                        productImage: SolutionOneIcon,
+                        productImage: WESPrd2Image,
                         productDescribe: "Waste-to-Refined Oil is the process of converting organic or non-organic waste into refined oil using various technologies such as pyrolysis or hydrolysis. The aim of this process is to turn waste into a usable source of energy, such as fuel or lubricants, by utilizing the chemical components present in the waste.",
                         excellence: [
                             {
@@ -176,7 +196,7 @@ export const SolutionsDetailData = {
                         id: "3",
                         question: "How efficient is this machine in converting waste into usable fuel?",
                         productName: "Refuse Derived Fuel Machine",
-                        productImage: SolutionOneIcon,
+                        productImage: WESPrd3Image,
                         productDescribe: "Refuse Derived Fuel (RDF) Machine is a machine used to produce burnable fuel from municipal solid waste or garbage, known as Refuse Derived Fuel (RDF).",
                         excellence: [
                             {
@@ -205,7 +225,7 @@ export const SolutionsDetailData = {
                         id: "4",
                         question: "How is the process of integrating Biomass Gasifier into a sustainable energy system?",
                         productName: "Biomass Gasifier",
-                        productImage: SolutionOneIcon,
+                        productImage: WESPrd4Image,
                         productDescribe: "Biomass Gasifier is a system or device used to convert biomass into synthetic gas (syngas) that can be used as fuel for various applications, including heating, power generation, or other industrial uses.",
                         excellence: [
                             {
@@ -234,7 +254,7 @@ export const SolutionsDetailData = {
                         id: "5",
                         question: "How does this product affect environmental sustainability?",
                         productName: "Renewable Energy Product",
-                        productImage: SolutionOneIcon,
+                        productImage: WESPrd5Image,
                         productDescribe: "Renewable Energy Product is a product or solution that utilizes renewable energy sources such as the sun, wind, water, or biomass to generate energy.",
                         excellence: [
                             {
@@ -277,7 +297,7 @@ export const SolutionsDetailData = {
             id: "3",
             properties:
             {
-                mainImage: SolutionOneIcon,
+                mainImage: ETD1Image,
                 title: "Event, Training, and Community Development",
                 alt: "Event, Training, and Community Development Image",
                 decription: "Our Event, Training, and Community Development Service is an essential part of our commitment to advancing sustainability in business. This service is designed to empower businesses and communities through educational initiatives, engagement events, and development programs.",
@@ -286,7 +306,7 @@ export const SolutionsDetailData = {
                         id: "1",
                         question: "How can collaboration between the public, private, and civil society sectors accelerate climate change mitigation efforts?",
                         productName: "Climate Conference and Innovation Challenge",
-                        productImage: SolutionOneIcon,
+                        productImage: ETDPrd1Image,
                         productDescribe: "Climate Conference and Innovation Challenge is an event designed to facilitate discussions and collaboration among stakeholders in efforts to address climate change and promote innovation in sustainable solutions.",
                         excellence: [
                             {
@@ -315,7 +335,7 @@ export const SolutionsDetailData = {
                         id: "2",
                         question: "How to measure the success of the 3R School Program in reducing the amount of waste at school and in the surrounding community?",
                         productName: "3R School Program",
-                        productImage: SolutionOneIcon,
+                        productImage: ETDPrd2Image,
                         productDescribe: "The 3R School Program is an educational initiative designed to teach students the concepts and practices of environmental friendliness at school. The program aims to reduce waste, promote the reuse of items, and encourage recycling as part of a sustainable lifestyle.",
                         excellence: [
                             {
@@ -344,7 +364,7 @@ export const SolutionsDetailData = {
                         id: "3",
                         question: "What are the social and environmental benefits obtained from the presence of Waste Bank Community in society?",
                         productName: "Waste Bank Community",
-                        productImage: SolutionOneIcon,
+                        productImage: ETDPrd3Image,
                         productDescribe: "Waste Bank Community is an initiative where the community collects, separates, and exchanges their waste for value or other incentives. The collected waste is usually categorized into specific types such as plastic, paper, glass, or metal, and then processed or sold for recycling.",
                         excellence: [
                             {
@@ -377,7 +397,7 @@ export const SolutionsDetailData = {
             id: "4",
             properties:
             {
-                mainImage: SolutionOneIcon,
+                mainImage: DC1Image,
                 title: "Digital Decarbonization",
                 alt: "Digital Decarbonization Image",
                 decription: "Our Digital Decarbonization Service is a critical component of our commitment to advancing sustainability in business. This service leverages cutting-edge digital technologies to help organizations reduce their carbon footprint and achieve their decarbonization goals.",
@@ -386,7 +406,7 @@ export const SolutionsDetailData = {
                         id: "1",
                         question: "How does this platform contribute to the overall efforts to reduce carbon emissions and accelerate the transition towards environmental sustainability?",
                         productName: "Carbon Management Platform",
-                        productImage: SolutionOneIcon,
+                        productImage: DCPrd1Image,
                         productDescribe: "Carbon Management Platform is a system or application designed to assist organizations in tracking, measuring, and managing their carbon footprint. This includes collecting data on carbon emissions from various sources, analyzing to identify areas where reductions can be made, and monitoring the implementation of carbon reduction actions..",
                         excellence: [
                             {
@@ -405,7 +425,7 @@ export const SolutionsDetailData = {
                         id: "2",
                         question: "How can the government, businesses, and the community collaborate in the development and implementation of the Carbon & Plastic Credit system?",
                         productName: "Carbon & Plastic Credit",
-                        productImage: SolutionOneIcon,
+                        productImage: DCPrd2Image,
                         productDescribe: "Carbon & Plastic Credit is an incentive system that provides credits to entities or individuals for reducing carbon emissions or plastic usage. These credits are awarded for adopting environmental practices, investing in emission reduction projects, or reducing single-use plastic consumption.",
                         excellence: [
                             {

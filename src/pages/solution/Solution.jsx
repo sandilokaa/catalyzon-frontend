@@ -46,13 +46,13 @@ const Solution = () => {
                         </Col>
                     </Row>
                     <Row className="btn-additional">
-                        <Col xs={6} xl={6} className="d-flex justify-content-end btn-chooseus">
-                            <Button>
+                        <Col xs={6} xl={6} className="d-flex justify-content-end">
+                            <Button href="#partner-content" className="btn-chooseus">
                                 Why Choose Us
                             </Button>
                         </Col>
-                        <Col xs={6} xl={6} className="d-flex justify-content-start btn-contactus">
-                            <Button onClick={handleClickButtonContact}>
+                        <Col xs={6} xl={6} className="d-flex justify-content-start">
+                            <Button onClick={handleClickButtonContact} className="btn-contactus">
                                 Contact Us
                             </Button>
                         </Col>

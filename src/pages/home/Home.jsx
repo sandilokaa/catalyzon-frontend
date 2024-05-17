@@ -24,7 +24,7 @@ import AwardsRecognitions from "../../components/award/AwardComponent";
 import SDGSDescribe from "../../components/sdgs/SDGSDescribe";
 import ImpactCard from "../../components/impact/ImpactCard";
 
-import SearchImpactIcon from "../../assets/images/search-impact-icon.png";
+import SearchImpactIcon from "../../assets/images/icon/search-impact-icon.png";
 
 import "../../assets/css/home.css";
 import "../../assets/css/swiper.css";

@@ -5,12 +5,12 @@ import {
     Card
 } from "react-bootstrap";
 
-import Impact1IconImage from "../../assets/images/impact1-icon.png";
-import Impact2IconImage from "../../assets/images/impact2-icon.png";
-import Impact3IconImage from "../../assets/images/impact3-icon.png";
-import Impact4IconImage from "../../assets/images/impact4-icon.png";
-import Impact5IconImage from "../../assets/images/impact5-icon.png";
-import Impact6IconImage from "../../assets/images/impact6-icon.png";
+import Impact1IconImage from "../../assets/images/impact/impact1-icon.png";
+import Impact2IconImage from "../../assets/images/impact/impact2-icon.png";
+import Impact3IconImage from "../../assets/images/impact/impact3-icon.png";
+import Impact4IconImage from "../../assets/images/impact/impact4-icon.png";
+import Impact5IconImage from "../../assets/images/impact/impact5-icon.png";
+import Impact6IconImage from "../../assets/images/impact/impact6-icon.png";
 
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";

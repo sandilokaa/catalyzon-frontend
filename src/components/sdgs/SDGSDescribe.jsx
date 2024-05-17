@@ -5,14 +5,14 @@ import {
     Card
 } from "react-bootstrap";
 
-import SDGS7Image from "../../assets/images/7-sdgs.png";
-import SDGS8Image from "../../assets/images/8-sdgs.png";
-import SDGS9Image from "../../assets/images/9-sdgs.png";
-import SDGS10Image from "../../assets/images/10-sdgs.png";
-import SDGS11Image from "../../assets/images/11-sdgs.png";
-import SDGS12Image from "../../assets/images/12-sdgs.png";
-import SDGS13Image from "../../assets/images/13-sdgs.png";
-import SDGS17Image from "../../assets/images/17-sdgs.png";
+import SDGS7Image from "../../assets/images/sdgs/7-sdgs.png";
+import SDGS8Image from "../../assets/images/sdgs/8-sdgs.png";
+import SDGS9Image from "../../assets/images/sdgs/9-sdgs.png";
+import SDGS10Image from "../../assets/images/sdgs/10-sdgs.png";
+import SDGS11Image from "../../assets/images/sdgs/11-sdgs.png";
+import SDGS12Image from "../../assets/images/sdgs/12-sdgs.png";
+import SDGS13Image from "../../assets/images/sdgs/13-sdgs.png";
+import SDGS17Image from "../../assets/images/sdgs/17-sdgs.png";
 
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
