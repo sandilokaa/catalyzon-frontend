@@ -1,5 +1,3 @@
-import SolutionOneIcon from "../images/icon/service-icon-one.png"; 
-
 import WMS1Image from "../images/solution/wms-1.png";
 import WMSPrd1Image from "../images/solution/wms-prd-1.png";
 import WMSPrd2Image from "../images/solution/wms-prd-2.png";
