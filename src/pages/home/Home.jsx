@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import {
     Row,
     Col,
@@ -33,8 +32,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Home = () => {
-
-    const navigate = useNavigate();
 
     const [selectedOutlookButton, setSelectedOutlookButton] = useState(null);
 
@@ -76,7 +73,7 @@ const Home = () => {
                         </Row>
                         <Row>
                             <Col xs={6} xl={2}>
-                                <Button className="btn-solution" onClick={() => navigate('/solution')}>
+                                <Button className="btn-solution" onClick={() => window.location.href = `/solution`}>
                                     Our Solution
                                 </Button>
                             </Col>
@@ -171,7 +168,7 @@ const Home = () => {
                                                     <Col xs={12} xl={8}>
                                                         <h1>{solution.properties.title}</h1>
                                                         <p>{solution.properties.description}</p>
-                                                        <Button onClick={() => navigate(`${solution.properties.link}`)}>
+                                                        <Button onClick={() => window.location.href = `${solution.properties.link}`}>
                                                             Learn More
                                                         </Button>
                                                     </Col>
@@ -217,7 +214,7 @@ const Home = () => {
                     </Row>
                     <Row>
                         <Col xs={6} xl={6} className="d-flex justify-content-end">
-                            <Button className="btn-sdgs-title-solutions" onClick={() => navigate('/solution')}>
+                            <Button className="btn-sdgs-title-solutions" onClick={() => window.location.href = `/solution`}>
                                 View Solutions
                             </Button>
                         </Col>

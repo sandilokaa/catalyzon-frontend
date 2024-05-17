@@ -64,11 +64,17 @@ const FooterComponent = () => {
                             <Row>
                                 <Col xs={12} xl={12}>
                                     <div>
-                                        <p>About Us</p>
-                                        <p>Solutions</p>
-                                        <p>Portfolio</p>
-                                        <p>Media</p>
-                                        <p>Contact</p>
+                                        <p onClick={() => window.location.href = '/'} style={{cursor: 'pointer'}}>About Us</p>
+                                        <p onClick={() => window.location.href = '/solution'} style={{cursor: 'pointer'}}>Solutions</p>
+                                        <a href="#impact-content" style={{cursor: 'pointer'}}>
+                                            <p >Portfolio</p>
+                                        </a>
+                                        <a href="#media-content" style={{cursor: 'pointer'}}>
+                                            <p >Media</p>
+                                        </a>
+                                        <a href="#contact-content" style={{cursor: 'pointer'}}>
+                                            <p >Contact</p>
+                                        </a>
                                     </div>
                                 </Col>
                             </Row>
@@ -84,10 +90,18 @@ const FooterComponent = () => {
                             <Row>
                                 <Col xs={12} xl={12}>
                                     <div>
-                                        <p>Waste Management Service</p>
-                                        <p>Waste to Energy Project</p>
-                                        <p>Training and Community Development</p>
-                                        <p>Digital Decarbonization</p>
+                                        <div onClick={() => window.location.href = '/solution/detail/1'} style={{cursor: 'pointer'}}>
+                                            <p>Waste Management Service</p>
+                                        </div>
+                                        <div onClick={() => window.location.href = '/solution/detail/2'} style={{cursor: 'pointer'}}>
+                                            <p>Waste to Energy Project</p>
+                                        </div>
+                                        <div onClick={() => window.location.href = '/solution/detail/3'} style={{cursor: 'pointer'}}>
+                                            <p>Training and Community Development</p>
+                                        </div>
+                                        <div onClick={() => window.location.href = '/solution/detail/4'} style={{cursor: 'pointer'}}>
+                                            <p>Digital Decarbonization</p>
+                                        </div>
                                     </div>
                                 </Col>
                             </Row>
@@ -103,9 +117,15 @@ const FooterComponent = () => {
                             <Row>
                                 <Col xs={12} xl={12}>
                                     <div>
-                                        <p>Instagram</p>
-                                        <p>LinkedIn</p>
-                                        <p>YouTube</p>
+                                        <a href="https://www.instagram.com/catalyzon/" target="_blank" rel="noopener noreferrer" style={{cursor: 'pointer'}}>
+                                            <p >Instagram</p>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/catalyzon/" target="_blank" rel="noopener noreferrer" style={{cursor: 'pointer'}}>
+                                            <p >LinkedIn</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/@catalyzon" target="_blank" rel="noopener noreferrer" style={{cursor: 'pointer'}}>
+                                            <p >YouTube</p>
+                                        </a>
                                     </div>
                                 </Col>
                             </Row>

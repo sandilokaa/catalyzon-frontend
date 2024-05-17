@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import {
     Container,
     Row,
@@ -17,8 +16,6 @@ import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const Solution = () => {
-
-    const navigate = useNavigate();
 
     const handleClickButtonContact = () => {
         const url = `https://web.whatsapp.com/send?phone=+6285811539501`;
@@ -74,7 +71,7 @@ const Solution = () => {
                                                 <Card.Text>
                                                     {solution.properties.decription}
                                                 </Card.Text>
-                                                <Card.Link onClick={() => navigate(`/solution/detail/${solution.id}`)}>See Solution</Card.Link>
+                                                <Card.Link onClick={() => window.location.href = `/solution/detail/${solution.id}`}>See Solution</Card.Link>
                                             </Card.Body>
                                         </Card>
                                     </Col>
