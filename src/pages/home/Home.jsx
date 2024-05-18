@@ -8,8 +8,6 @@ import {
     Card
 } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 import { MediaCollectionData } from "../../assets/data/media";
 import { SolutionsCollectionData } from "../../assets/data/solutionSwiper";
 
@@ -26,10 +24,7 @@ import ImpactCard from "../../components/impact/ImpactCard";
 import SearchImpactIcon from "../../assets/images/icon/search-impact-icon.png";
 
 import "../../assets/css/home.css";
-import "../../assets/css/swiper.css";
 import "../../assets/css/responsive.css";
-import "swiper/css";
-import "swiper/css/pagination";
 
 const Home = () => {
 
@@ -152,33 +147,32 @@ const Home = () => {
 
             <div id="solutions-content">
                 <Container>
-                    <Row className="solutions-swiper">
-                        <Col xs={12} xl={12}>
-                            <Swiper
-                                pagination={{
-                                    clickable: true,
-                                }}
-                                modules={[Pagination]}
-                            >
-                                {
-                                    SolutionsCollectionData.Collections.map((solution) => {
-                                        return (
-                                            <SwiperSlide key={solution.id} style={{ backgroundImage: `url(${solution.properties.image})`, backgroundSize: 'cover' ,borderRadius: '30px', padding: '6%' }}>
-                                                <Row className="solutions-detail">
-                                                    <Col xs={12} xl={8}>
-                                                        <h1>{solution.properties.title}</h1>
-                                                        <p>{solution.properties.description}</p>
-                                                        <Button onClick={() => window.location.href = `${solution.properties.link}`}>
-                                                            Learn More
-                                                        </Button>
-                                                    </Col>
-                                                </Row>
-                                            </SwiperSlide>
-                                        )
-                                    }
-                                )}
-                            </Swiper>
+                    <Row className="solutions-title">
+                        <Col xs={12} xl={{ span: 10, offset: 1 }}>
+                            <h1>Leading the Way with <span style={{backgroundColor:'#012E80', color:'#FFFFFF'}}>Comprehensive</span> Sustainable Solutions</h1>
                         </Col>
+                        <Col xs={12} xl={{ span: 8, offset: 2 }}>
+                            <p>Catalyzon is at the forefront of innovation, providing comprehensive solutions designed to drive sustainability and foster a greener future.</p>
+                        </Col>
+                    </Row>
+                    <Row className="solutions-we-are">
+                        {
+                            SolutionsCollectionData.Collections.map((solution) => {
+                                return (
+                                    <Col xs={12} xl={6} key={solution.id} className="solution-selection">
+                                        <Row className="solutions-detail"  style={{ backgroundImage: `url(${solution.properties.image})`, backgroundSize: 'cover', borderRadius: '30px', padding: '6%', height:'100%' }}>
+                                            <Col xs={12} xl={12}>
+                                                <h1>{solution.properties.title}</h1>
+                                                <p>{solution.properties.description}</p>
+                                                <Button onClick={() => window.location.href = `${solution.properties.link}`}>
+                                                    Learn More
+                                                </Button>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                )
+                            }
+                        )}
                     </Row>
                 </Container>
             </div>

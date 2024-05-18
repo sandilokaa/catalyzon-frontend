@@ -103,23 +103,36 @@
     #solutions-content{
         margin-top: 12%;
     }
-    
-    #solutions-content .solutions-swiper{
-        margin-top: 4%;
+
+    #solutions-content .solutions-title h1{
+        font-size: 36px;
     }
     
-    #solutions-content .solutions-swiper h1{
-        font-size: 30px;
+    #solutions-content .solutions-title p{
+        font-size: 20px;
+    }
+    
+    #solutions-content .solutions-we-are{
+        margin-top: 8%;
+    }
+
+    #solutions-content .solutions-we-are .solution-selection{
+        padding: 3% 6%;
+    }
+    
+    #solutions-content .solutions-we-are h1{
+        font-size: 28px;
         font-weight: 600;
         color: var(--font-color-white);
     }
     
-    #solutions-content .solutions-swiper p{
+    #solutions-content .solutions-we-are p{
         margin-top: 2%;
+        font-size: 18px;
         color: var(--font-color-white);
     }
     
-    #solutions-content .solutions-swiper button{
+    #solutions-content .solutions-we-are button{
         width: 50%;
     }
 
@@ -610,8 +623,35 @@
         margin-top: 4%;
     }
 
-    #solution-detail-product-content hr{
+    #solution-detail-product-content .consultant-content{
         margin-top: 12%;
+        background-color: #012E80;
+        padding: 6% 0;
+    }
+    
+    #solution-detail-product-content .consultant-content h1{
+        color: var(--font-color-white);
+        font-weight: 600;
+        margin: auto 0;
+    }
+    
+    #solution-detail-product-content .consultant-content .btn-consultation{
+        margin-top: 6%;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        font-weight: 600;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        padding: 2%;
+        transition: 0.3s all ease-in-out;
+    }
+    
+    #solution-detail-product-content .consultant-content .btn-consultation:hover{
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: var(--font-color-black);
+    
     }
 
     /* ---------- End Solution Detail Product Content ---------- */

@@ -23,6 +23,13 @@ const SolutionDetail = () => {
 
     const id = (params.pathname).split('/')[3];
 
+    const handleClickConsultation = () => {
+
+        const url = `https://web.whatsapp.com/send?phone=+6285811539501`;
+        window.open(url)
+
+    };
+
     return (
 
         <SolutionLayout>
@@ -43,13 +50,15 @@ const SolutionDetail = () => {
                                             </Button>
                                         </Col>
                                         <Col xs={12} xl={6} className="d-flex justify-content-end">
-                                            <Image src={solution.properties.mainImage} alt={solution.properties.alt} style={{borderRadius:'30px', height: '100%', width: '90%'}}/>
+                                            <Image src={solution.properties.mainImage} alt={solution.properties.alt} style={{ borderRadius: '30px', height: '100%', width: '90%' }} />
                                         </Col>
                                     </Row>
                                 </Container>
                             </div>
 
-                            {solution.properties.products.map((product) => {
+                            {solution.properties.products.map((product, index) => {
+
+                                const isLastProduct = index === solution.properties.products.length - 1;
 
                                 return (
                                     <div id="solution-detail-product-content" key={product.id}>
@@ -61,7 +70,7 @@ const SolutionDetail = () => {
                                             </Row>
                                             <Row className="product-detail">
                                                 <Col xs={12} xl={6}>
-                                                    <Image src={product.productImage}/>
+                                                    <Image src={product.productImage} />
                                                 </Col>
                                                 <Col xs={12} xl={6} className="product-detail-head">
                                                     <h3>{product.productName}</h3>
@@ -87,8 +96,23 @@ const SolutionDetail = () => {
                                                     </Col>
                                                 ))}
                                             </Row>
-                                            <hr />
                                         </Container>
+                                        {!isLastProduct && (
+                                            <div className="consultant-content">
+                                                <Container>
+                                                    <Row>
+                                                        <Col xs={12} xl={6}>
+                                                            <h1>Enhance Your Energy Efficiency Journey with Our Support.</h1>
+                                                        </Col>
+                                                        <Col xs={12} xl={6}>
+                                                            <Button className="btn-consultation" onClick={handleClickConsultation}>
+                                                                Free Consultation
+                                                            </Button>
+                                                        </Col>
+                                                    </Row>
+                                                </Container>
+                                            </div>
+                                        )}
                                     </div>
                                 )
                             })}

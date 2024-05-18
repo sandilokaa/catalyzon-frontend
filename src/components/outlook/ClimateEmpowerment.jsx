@@ -13,7 +13,6 @@ const ClimateEmpowerment = () => {
         <>
             <h5>Our Missions</h5>
             <p>Developing waste community through education, empowerment, and climate action movement in a sustainable ecosystem.</p>
-            <Button> about us </Button>
         </>
 
     );

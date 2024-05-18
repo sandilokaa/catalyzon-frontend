@@ -64,17 +64,11 @@ const FooterComponent = () => {
                             <Row>
                                 <Col xs={12} xl={12}>
                                     <div>
-                                        <p onClick={() => window.location.href = '/'} style={{cursor: 'pointer'}}>About Us</p>
-                                        <p onClick={() => window.location.href = '/solution'} style={{cursor: 'pointer'}}>Solutions</p>
-                                        <a href="#impact-content" style={{cursor: 'pointer'}}>
-                                            <p >Portfolio</p>
-                                        </a>
-                                        <a href="#media-content" style={{cursor: 'pointer'}}>
-                                            <p >Media</p>
-                                        </a>
-                                        <a href="#contact-content" style={{cursor: 'pointer'}}>
-                                            <p >Contact</p>
-                                        </a>
+                                        <p onClick={() => window.location.href = '/'} style={{ cursor: 'pointer' }}>About Us</p>
+                                        <p onClick={() => window.location.href = '/solution'} style={{ cursor: 'pointer' }}>Solutions</p>
+                                        <p onClick={() => window.location.href = '/#impact-content'} style={{ cursor: 'pointer' }}>Portfolio</p>
+                                        <p onClick={() => window.location.href = '/#media-content'} style={{ cursor: 'pointer' }}>Media</p>
+                                        <p onClick={() => window.location.href = '/#contact-content'} style={{ cursor: 'pointer' }}>Contact</p>
                                     </div>
                                 </Col>
                             </Row>
@@ -90,16 +84,16 @@ const FooterComponent = () => {
                             <Row>
                                 <Col xs={12} xl={12}>
                                     <div>
-                                        <div onClick={() => window.location.href = '/solution/detail/1'} style={{cursor: 'pointer'}}>
+                                        <div onClick={() => window.location.href = '/solution/detail/1'} style={{ cursor: 'pointer' }}>
                                             <p>Waste Management Service</p>
                                         </div>
-                                        <div onClick={() => window.location.href = '/solution/detail/2'} style={{cursor: 'pointer'}}>
+                                        <div onClick={() => window.location.href = '/solution/detail/2'} style={{ cursor: 'pointer' }}>
                                             <p>Waste to Energy Project</p>
                                         </div>
-                                        <div onClick={() => window.location.href = '/solution/detail/3'} style={{cursor: 'pointer'}}>
+                                        <div onClick={() => window.location.href = '/solution/detail/3'} style={{ cursor: 'pointer' }}>
                                             <p>Training and Community Development</p>
                                         </div>
-                                        <div onClick={() => window.location.href = '/solution/detail/4'} style={{cursor: 'pointer'}}>
+                                        <div onClick={() => window.location.href = '/solution/detail/4'} style={{ cursor: 'pointer' }}>
                                             <p>Digital Decarbonization</p>
                                         </div>
                                     </div>
@@ -117,13 +111,13 @@ const FooterComponent = () => {
                             <Row>
                                 <Col xs={12} xl={12}>
                                     <div>
-                                        <a href="https://www.instagram.com/catalyzon/" target="_blank" rel="noopener noreferrer" style={{cursor: 'pointer'}}>
+                                        <a href="https://www.instagram.com/catalyzon/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                             <p >Instagram</p>
                                         </a>
-                                        <a href="https://www.linkedin.com/company/catalyzon/" target="_blank" rel="noopener noreferrer" style={{cursor: 'pointer'}}>
+                                        <a href="https://www.linkedin.com/company/catalyzon/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                             <p >LinkedIn</p>
                                         </a>
-                                        <a href="https://www.youtube.com/@catalyzon" target="_blank" rel="noopener noreferrer" style={{cursor: 'pointer'}}>
+                                        <a href="https://www.youtube.com/@catalyzon" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                             <p >YouTube</p>
                                         </a>
                                     </div>

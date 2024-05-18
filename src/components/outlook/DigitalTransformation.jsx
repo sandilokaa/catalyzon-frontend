@@ -13,7 +13,6 @@ const DigitalTransformation = () => {
         <>
             <h5>Our Missions</h5>
             <p>We help businesses adopt environmentally friendly practices to reduce their emission impact on the environment.</p>
-            <Button> about us </Button>
         </>
 
     );

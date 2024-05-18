@@ -225,34 +225,58 @@ body, html {
     margin-top: 6%;
 }
 
-#solutions-content .solutions-swiper{
+#solutions-content .solutions-title h1{
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--font-color-black);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#solutions-content .solutions-title p{
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--font-color-black);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#solutions-content .solutions-we-are{
     margin-top: 4%;
 }
 
-#solutions-content .solutions-swiper h1{
-    font-size: 38px;
+#solutions-content .solutions-we-are .solution-selection{
+    padding: 1% 2%;
+}
+
+#solutions-content .solutions-we-are h1{
+    font-size: 36px;
     font-weight: 600;
     color: var(--font-color-white);
 }
 
-#solutions-content .solutions-swiper p{
+#solutions-content .solutions-we-are p{
     margin-top: 2%;
     font-size: 20px;
     color: var(--font-color-white);
 }
 
-#solutions-content .solutions-swiper button{
+#solutions-content .solutions-we-are button{
     margin-top: 4%;
     background-color: transparent;
     border-radius: 30px;
-    width: 20%;
+    width: 30%;
     font-weight: 600;
     color: var(--font-color-white);
     border: 1px solid #FFFFFF;
     transition: 0.3s all ease-in-out;
 }
 
-#solutions-content .solutions-swiper button:hover{
+#solutions-content .solutions-we-are button:hover{
     background-color: #012E80;
     border: 1px solid #012E80;
 }
@@ -974,8 +998,34 @@ body, html {
     color: var(--font-color-black);
 }
 
-#solution-detail-product-content hr{
+#solution-detail-product-content .consultant-content{
     margin-top: 6%;
+    background-color: #012E80;
+    padding: 4% 0;
+}
+
+#solution-detail-product-content .consultant-content h1{
+    color: var(--font-color-white);
+    font-weight: 600;
+    margin: auto 0;
+}
+
+#solution-detail-product-content .consultant-content .btn-consultation{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    font-weight: 600;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    transition: 0.3s all ease-in-out;
+}
+
+#solution-detail-product-content .consultant-content .btn-consultation:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: var(--font-color-black);
+
 }
 
 /* ---------- End Solution Detail Product Content ---------- */
