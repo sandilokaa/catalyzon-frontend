@@ -45,7 +45,7 @@ export const SolutionsCollectionData = {
             properties:
             {
                 icon: SolutionFourIcon,
-                title: "Digital Decarbonization",
+                title: "Digital Decarbonization Solution",
                 alt: "Digital Decarbonization Image",
                 decription: "Our Digital Decarbonization Service is a critical component of our commitment to advancing sustainability in business. This service leverages cutting-edge digital technologies to help organizations reduce their carbon footprint and achieve their decarbonization goals."
             }

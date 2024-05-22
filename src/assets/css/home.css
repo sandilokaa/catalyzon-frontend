@@ -142,6 +142,156 @@ body, html {
 
 /* ====================================================== */
 
+/* ---------- Problem Content ---------- */
+
+#problem-content{
+    margin-top: 6%;
+}
+
+#problem-content h1{
+    font-size: 54px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--font-color-black);
+}
+
+#problem-content p{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--font-color-black);
+}
+
+#problem-content > .container .row:nth-child(3){
+    margin-top: 4%;
+}
+
+#problem-content .card{
+    height: 100%;
+}
+
+#problem-content .card .problem-icon{
+    width: 45px;
+    border: 1px solid #012E80;
+    background-color: #012E80;
+    border-radius: 50%;
+    margin-top: 4%;
+    margin-left: 4%;
+    padding: 1%;
+}
+
+#problem-content .card .card-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#problem-content .card .card-text{
+    font-size: 20px;
+    color: var(--font-color-black);
+    text-align: start;
+}
+
+/* ---------- End Problem Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Quotes Content ---------- */
+
+#quotes-developing-content{
+    margin-top: 6%;
+    position: relative;
+}
+
+#quotes-developing-content .container .row{
+    padding: 10% 0;
+    margin: auto 0;
+}
+
+#quotes-developing-content .quotes-developing-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../images/background/bg-about-us.png');
+    background-size: cover;
+}
+
+#quotes-developing-content .quotes-one h1{
+    font-size: 40px;
+    color: var(--font-color-white);
+    font-weight: 600;
+    text-align: center;
+}
+
+#quotes-developing-content .quotes-two h1{
+    margin-top: 2%;
+    font-size: 40px;
+    color: var(--font-color-white);
+    font-weight: 600;
+    text-align: center;
+}
+
+#quotes-developing-content .quotes-three p{
+    font-size: 22px;
+    color: var(--font-color-white);
+    text-align: center;
+    font-weight: 300;
+}
+
+/* ---------- End Quotes Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- About Us Content ---------- */
+
+#about-us-content{
+    margin-top: 6%;
+}
+
+#about-us-content .about-us-describe{
+    margin: auto 0;
+}
+
+#about-us-content .about-us-describe hr{
+    width: 14%;
+    height: 2px;
+    background-color: #012E80;
+}
+
+#about-us-content .about-us-describe h5{
+    margin-top: 2%;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#about-us-content .about-us-describe h2{
+    margin-top: 2%;
+    font-weight: 600;
+    color: var(--font-color-black);
+}
+
+#about-us-content .about-us-describe p{
+    margin-top: 2%;
+    font-size: 20px;
+    color: var(--font-color-black);
+    font-weight: 300;
+}
+
+/* ---------- End About Us Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
 /* ---------- Vision & Missions Content ---------- */
 
 #vision-missions-content{
@@ -253,20 +403,25 @@ body, html {
     padding: 1% 2%;
 }
 
-#solutions-content .solutions-we-are h1{
-    font-size: 36px;
+.solutions-detail-title{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+#solutions-content .solutions-detail-title h1{
+    font-size: 30px;
     font-weight: 600;
     color: var(--font-color-white);
+    margin: 0;
 }
 
-#solutions-content .solutions-we-are p{
-    margin-top: 2%;
-    font-size: 20px;
-    color: var(--font-color-white);
+#solutions-content .solutions-detail-button{
+    bottom: -20%;
 }
 
-#solutions-content .solutions-we-are button{
-    margin-top: 4%;
+#solutions-content .solutions-detail-button button{
     background-color: transparent;
     border-radius: 30px;
     width: 30%;
@@ -870,6 +1025,7 @@ body, html {
     font-size: 24px;
     font-weight: 600;
     color: var(--font-color-black);
+    height: 36%;
 }
 
 #card-point-solution .card .card-text{

@@ -97,12 +97,12 @@ const SolutionDetail = () => {
                                                 ))}
                                             </Row>
                                         </Container>
-                                        {!isLastProduct && (
+                                        {!isLastProduct && product.excellence.length > 0 && (
                                             <div className="consultant-content">
                                                 <Container>
                                                     <Row>
                                                         <Col xs={12} xl={6}>
-                                                            <h1>Enhance Your Energy Efficiency Journey with Our Support.</h1>
+                                                            <h1>Enchance Your Sustainability Story with {product.productName}.</h1>
                                                         </Col>
                                                         <Col xs={12} xl={6}>
                                                             <Button className="btn-consultation" onClick={handleClickConsultation}>

@@ -10,6 +10,7 @@ import {
 import Marquee from "react-fast-marquee";
 import { MediaCollectionData } from "../../assets/data/media";
 import { SolutionsCollectionData } from "../../assets/data/solutionSwiper";
+import { ProblemCollectionData } from "../../assets/data/problem";
 
 import HomeLayout from "../../layouts/home/HomeLayout";
 import MarqueeClient from "../../components/marquee/Client";
@@ -82,6 +83,72 @@ const Home = () => {
                 </Container>
             </div>
 
+            <div id="problem-content">
+                <Container>
+                    <Row>
+                        <Col xs={12} xl={{ span: 10, offset: 1 }}>
+                            <h1><span style={{ backgroundColor: '#012E80', color: '#FFFFFF' }}>The importance</span> of high-quality carbon projects cannot be overstated.</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} xl={{ span: 8, offset: 2 }}>
+                            <p>High-quality carbon projects reduce emissions, promote sustainability, and enhance biodiversity.</p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {ProblemCollectionData.Collections.map((problem) => {
+                            return (
+                                <Col xs={12} xl={4} key={problem.id} className="problem-card">
+                                    <Card>
+                                        <Card.Img variant="top" className="problem-icon" src={problem.properties.image} alt={problem.properties.alt} />
+                                        <Card.Body>
+                                            <Card.Title>{problem.properties.title}</Card.Title>
+                                            <Card.Text>{problem.properties.description}</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            )
+                        })}
+
+                    </Row>
+                </Container>
+            </div>
+
+            <div id="quotes-developing-content">
+                <div className="quotes-developing-background"></div>
+                <Container>
+                    <Row>
+                        <Col xs={12} xl={{span: 10, offset: 1}} className="quotes-one">
+                            <h1>Developing a carbon project can be long, expensive, and meticulous</h1>
+                        </Col>
+                        <Col xs={12} xl={{span: 10, offset: 1}} className="quotes-two">
+                            <h1>Catalyzon is here to help</h1>
+                        </Col>
+                        <Col xs={12} xl={{span: 10, offset: 1}} className="quotes-three">
+                            <p>Simplify your project development journey with technology</p>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div id="about-us-content">
+                <Container>
+                    <Row>
+                        <Col xs={12} xl={6} className="about-us-video">
+                            <iframe className="youtube-aboutus" width="100%" height="350" src="https://www.youtube.com/embed/s0WY5rLr15E?si=CDhgpyfn2KSj24Pm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style={{borderRadius: '30px', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}></iframe>
+                        </Col>
+                        <Col xs={12} xl={6} className="about-us-describe">
+                            <hr />
+                            <h5>About Us</h5>
+                            <h2>Catalyzon</h2>
+                            <p>We are on a mission to provide a comprehensive waste-to-energy solution with people and eco-friendly technology that helps company reduce their environmental impact while 
+                                creating economic value from waste. Our goal is to create a more sustainable future by catalyzing change and inspiring others to join the movement towards a sustainable prosperity.
+                            </p>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
             <div id="vision-missions-content">
                 <Container>
                     <Row className="vision-missions-describe">
@@ -149,7 +216,7 @@ const Home = () => {
                 <Container>
                     <Row className="solutions-title">
                         <Col xs={12} xl={{ span: 10, offset: 1 }}>
-                            <h1>Leading the Way with <span style={{backgroundColor:'#012E80', color:'#FFFFFF'}}>Comprehensive</span> Sustainable Solutions</h1>
+                            <h1>Leading the Way with <span style={{ backgroundColor: '#012E80', color: '#FFFFFF' }}>Comprehensive</span> Sustainable Solutions</h1>
                         </Col>
                         <Col xs={12} xl={{ span: 8, offset: 2 }}>
                             <p>Catalyzon is at the forefront of innovation, providing comprehensive solutions designed to drive sustainability and foster a greener future.</p>
@@ -160,19 +227,26 @@ const Home = () => {
                             SolutionsCollectionData.Collections.map((solution) => {
                                 return (
                                     <Col xs={12} xl={6} key={solution.id} className="solution-selection">
-                                        <Row className="solutions-detail"  style={{ backgroundImage: `url(${solution.properties.image})`, backgroundSize: 'cover', borderRadius: '30px', padding: '6%', height:'100%' }}>
-                                            <Col xs={12} xl={12}>
-                                                <h1>{solution.properties.title}</h1>
-                                                <p>{solution.properties.description}</p>
-                                                <Button onClick={() => window.location.href = `${solution.properties.link}`}>
-                                                    Learn More
-                                                </Button>
-                                            </Col>
+                                        <Row style={{ backgroundImage: `url(${solution.properties.image})`, backgroundSize: 'cover', borderRadius: '30px', padding: '16% 4%', height: '100%' }}>
+                                            <div className="solution-detail">
+                                                <Row className="solutions-detail-title">
+                                                    <Col xs={12} xl={10}>
+                                                        <h1>{solution.properties.title}</h1>
+                                                    </Col>
+                                                </Row>
+                                                <Row className="solutions-detail-button">
+                                                    <Col xs={12} xl={12}>
+                                                        <Button onClick={() => window.location.href = `${solution.properties.link}`}>
+                                                            Learn More
+                                                        </Button>
+                                                    </Col>
+                                                </Row>
+                                            </div>
                                         </Row>
                                     </Col>
                                 )
                             }
-                        )}
+                            )}
                     </Row>
                 </Container>
             </div>

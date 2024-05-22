@@ -60,6 +60,133 @@
 
     /* ====================================================== */
 
+    /* ---------- Problem Content ---------- */
+
+    #problem-content{
+        margin-top: 12%;
+    }
+
+    #problem-content h1{
+        font-size: 36px;
+    }
+
+    #problem-content p{
+        font-size: 18px;
+    }
+
+    #problem-content > .container .row:nth-child(3){
+        margin-top: 4%;
+    }
+
+    #problem-content .problem-card{
+        margin-top: 4%;
+    }
+
+    #problem-content .card{
+        height: 100%;
+    }
+
+    #problem-content .card .problem-icon{
+        width: 40px;
+    }
+
+    #problem-content .card .card-title{
+        font-size: 20px;
+    }
+
+    #problem-content .card .card-text{
+        font-size: 18px;
+    }
+
+    /* ---------- End Problem Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Quotes Content ---------- */
+
+    #quotes-developing-content{
+        margin-top: 12%;
+    }
+
+    #quotes-developing-content .container .row{
+        padding: 10% 0;
+    }
+
+    #quotes-developing-content .quotes-one h1{
+        font-size: 36px;
+    }
+
+    #quotes-developing-content .quotes-two h1{
+        margin-top: 2%;
+        font-size: 36px;
+    }
+
+    #quotes-developing-content .quotes-three p{
+        font-size: 18px;
+    }
+
+    /* ---------- End Quotes Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- About Us Content ---------- */
+
+    #about-us-content{
+        margin-top: 12%;
+    }
+
+    #about-us-content .row{
+        flex-direction: column-reverse;
+    }
+
+    #about-us-content .about-us-video .youtube-aboutus{
+        margin-top: 6%;
+        top: 0 !important;
+        left: 50% !important;
+        transform: translate(-50%) !important;
+    }
+
+    #about-us-content .about-us-describe{
+        margin: auto 0;
+    }
+
+    #about-us-content .about-us-describe hr{
+        width: 14%;
+        height: 2px;
+        background-color: #012E80;
+    }
+
+    #about-us-content .about-us-describe h5{
+        margin-top: 2%;
+        font-weight: 600;
+        color: var(--font-color-black);
+    }
+
+    #about-us-content .about-us-describe h2{
+        margin-top: 2%;
+        font-weight: 600;
+        color: var(--font-color-black);
+    }
+
+    #about-us-content .about-us-describe p{
+        margin-top: 2%;
+        font-size: 18px;
+        color: var(--font-color-black);
+    }
+
+    /* ---------- End About Us Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
     /* ---------- Vision Missions Content ---------- */
 
     #vision-missions-content{
@@ -109,7 +236,7 @@
     }
     
     #solutions-content .solutions-title p{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     #solutions-content .solutions-we-are{
@@ -120,19 +247,25 @@
         padding: 3% 6%;
     }
     
-    #solutions-content .solutions-we-are h1{
+    .solutions-detail-title{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+    
+    #solutions-content .solutions-detail-title h1{
         font-size: 28px;
         font-weight: 600;
         color: var(--font-color-white);
+        margin: 0;
     }
     
-    #solutions-content .solutions-we-are p{
-        margin-top: 2%;
-        font-size: 18px;
-        color: var(--font-color-white);
+    #solutions-content .solutions-detail-button{
+        bottom: 0;
     }
     
-    #solutions-content .solutions-we-are button{
+    #solutions-content .solutions-detail-button button{
         width: 50%;
     }
 
@@ -154,7 +287,7 @@
     }
     
     #awards-recognitions-content .awards-recognitions-title p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
     }
     
@@ -262,7 +395,7 @@
 
     #impact-content p{
         margin-top: 4%;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #impact-content .btn-see-impact{
@@ -361,7 +494,7 @@
     }
 
     #media-content p{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #media-content .media-card .media-describe{
@@ -449,11 +582,11 @@
     }
 
     #solution-title-content h1{
-        font-size: 34px;
+        font-size: 36px;
     }
 
     #solution-title-content p{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #solution-title-content .btn-additional{
@@ -524,7 +657,7 @@
     }
 
     #partner-content h1{
-        font-size: 34px;
+        font-size: 36px;
         font-weight: 600;
     }
 
@@ -569,7 +702,7 @@
 
     #solution-detail-title-content h1{
         margin-top: 8%;
-        font-size: 38px;
+        font-size: 36px;
     }
 
     #solution-detail-title-content .btn-learn-more{
