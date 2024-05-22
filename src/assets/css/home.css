@@ -798,6 +798,10 @@ body, html {
     border: 1px solid #FFFFFF;
 }
 
+#contact-content .btn-submit{
+    background-color: #012E80;
+}
+
 /* ---------- End Contact Content ---------- */
 
 /* ====================================================== */

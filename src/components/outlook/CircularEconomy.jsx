@@ -1,7 +1,4 @@
 import React from "react";
-import {
-    Button
-} from "react-bootstrap";
 
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";

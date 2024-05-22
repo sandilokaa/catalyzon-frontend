@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Row,
     Col,
@@ -7,6 +7,8 @@ import {
     Image
 } from "react-bootstrap";
 
+import ModalContact from "../modal/ModalContact";
+
 import CatalyzonLogoImage from "../../assets/images/catalyzon-logo.png";
 
 import "../../assets/css/home.css";
@@ -14,10 +16,12 @@ import "../../assets/css/responsive.css";
 
 const FooterComponent = () => {
 
-    const handleClickButton = () => {
-        const url = `https://web.whatsapp.com/send?phone=+6285811539501`;
-        window.open(url)
-    };
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
 
     return (
 
@@ -32,11 +36,15 @@ const FooterComponent = () => {
                     </Row>
                     <Row>
                         <Col xs={12} xl={{ span: 10, offset: 1 }} className="d-flex justify-content-center">
-                            <Button className="btn-contact" onClick={handleClickButton}>
+                            <Button className="btn-contact" onClick={handleShow}>
                                 Contact Us
                             </Button>
                         </Col>
                     </Row>
+                    <ModalContact
+                        show={show}
+                        handleClose={handleClose}
+                    />
                 </Container>
             </div>
 

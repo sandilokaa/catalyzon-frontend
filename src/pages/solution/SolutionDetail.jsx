@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Container,
     Row,
@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 import { SolutionsDetailData } from "../../assets/data/solutionDetail";
 
 import SolutionLayout from "../../layouts/solution/SolutionLayout";
+import ModalContact from "../../components/modal/ModalContact";
 
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
@@ -23,12 +24,10 @@ const SolutionDetail = () => {
 
     const id = (params.pathname).split('/')[3];
 
-    const handleClickConsultation = () => {
+    const [show, setShow] = useState(false);
 
-        const url = `https://web.whatsapp.com/send?phone=+6285811539501`;
-        window.open(url)
-
-    };
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
 
@@ -105,11 +104,15 @@ const SolutionDetail = () => {
                                                             <h1>Enchance Your Sustainability Story with {product.productName}.</h1>
                                                         </Col>
                                                         <Col xs={12} xl={6}>
-                                                            <Button className="btn-consultation" onClick={handleClickConsultation}>
+                                                            <Button className="btn-consultation" onClick={handleShow}>
                                                                 Free Consultation
                                                             </Button>
                                                         </Col>
                                                     </Row>
+                                                    <ModalContact
+                                                        show={show}
+                                                        handleClose={handleClose}
+                                                    />
                                                 </Container>
                                             </div>
                                         )}
