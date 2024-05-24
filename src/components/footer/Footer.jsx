@@ -16,12 +16,10 @@ import "../../assets/css/responsive.css";
 
 const FooterComponent = () => {
 
-
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
 
     return (
 

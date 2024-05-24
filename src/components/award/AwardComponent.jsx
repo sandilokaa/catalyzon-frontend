@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     Image,
     Row,
     Col,
     Button
 } from "react-bootstrap";
+import AOS from 'aos';
 
 import KUIAImage from "../../assets/images/award/kuia.png";
 import IntoqImage from "../../assets/images/award/intoc.png";
@@ -15,6 +16,7 @@ import PertamudaImage from "../../assets/images/award/pertamuda-2.png";
 import GSMAImage from "../../assets/images/award/gsma-2.png";
 import ApecImage from "../../assets/images/award/apec-2.png";
 
+import 'aos/dist/aos.css';
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
@@ -26,11 +28,15 @@ const AwardsRecognitions = () => {
         setShowMore(!showMore);
     };
 
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
 
         <>
             <hr />
-            <Row className="awards-describe">
+            <Row className="awards-describe" data-aos="fade-up-right">
                 <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                     <h6>01</h6>
                 </Col>
@@ -42,7 +48,7 @@ const AwardsRecognitions = () => {
                 </Col>
             </Row>
             <hr />
-            <Row className="awards-describe">
+            <Row className="awards-describe" data-aos="fade-up-left">
                 <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                     <h6>02</h6>
                 </Col>
@@ -54,7 +60,7 @@ const AwardsRecognitions = () => {
                 </Col>
             </Row>
             <hr />
-            <Row className="awards-describe">
+            <Row className="awards-describe" data-aos="fade-up-right">
                 <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                     <h6>03</h6>
                 </Col>
@@ -66,7 +72,7 @@ const AwardsRecognitions = () => {
                 </Col>
             </Row>
             <hr />
-            <Row className="awards-describe">
+            <Row className="awards-describe" data-aos="fade-up-left">
                 <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                     <h6>04</h6>
                 </Col>
@@ -80,7 +86,7 @@ const AwardsRecognitions = () => {
             {showMore && (
                 <>
                     <hr />
-                    <Row className="awards-describe">
+                    <Row className="awards-describe" data-aos="fade-up-right">
                         <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                             <h6>05</h6>
                         </Col>
@@ -92,7 +98,7 @@ const AwardsRecognitions = () => {
                         </Col>
                     </Row>
                     <hr />
-                    <Row className="awards-describe">
+                    <Row className="awards-describe" data-aos="fade-up-left">
                         <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                             <h6>06</h6>
                         </Col>
@@ -104,7 +110,7 @@ const AwardsRecognitions = () => {
                         </Col>
                     </Row>
                     <hr />
-                    <Row className="awards-describe">
+                    <Row className="awards-describe" data-aos="fade-up-right">
                         <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                             <h6>07</h6>
                         </Col>
@@ -116,7 +122,7 @@ const AwardsRecognitions = () => {
                         </Col>
                     </Row>
                     <hr />
-                    <Row className="awards-describe">
+                    <Row className="awards-describe" data-aos="fade-up-left">
                         <Col xs={2} xl={1} className="d-flex justify-content-start align-items-center">
                             <h6>08</h6>
                         </Col>

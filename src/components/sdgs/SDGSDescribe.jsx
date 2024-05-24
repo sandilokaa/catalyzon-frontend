@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     Row,
     Col,
     Card
 } from "react-bootstrap";
+import AOS from 'aos';
 
 import SDGS7Image from "../../assets/images/sdgs/7-sdgs.png";
 import SDGS8Image from "../../assets/images/sdgs/8-sdgs.png";
@@ -14,17 +15,22 @@ import SDGS12Image from "../../assets/images/sdgs/12-sdgs.png";
 import SDGS13Image from "../../assets/images/sdgs/13-sdgs.png";
 import SDGS17Image from "../../assets/images/sdgs/17-sdgs.png";
 
+import 'aos/dist/aos.css';
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
 const SDGSDescribe = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return (
 
         <>
 
         <Row>
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS7Image} className="rounded-0"/>
                     <Card.Body>
@@ -34,7 +40,7 @@ const SDGSDescribe = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS8Image} className="rounded-0"/>
                     <Card.Body>
@@ -44,7 +50,7 @@ const SDGSDescribe = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS9Image} className="rounded-0"/>
                     <Card.Body>
@@ -54,7 +60,7 @@ const SDGSDescribe = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS10Image} className="rounded-0"/>
                     <Card.Body>
@@ -67,7 +73,7 @@ const SDGSDescribe = () => {
         </Row>
         
         <Row className="mt-4">
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS11Image} className="rounded-0"/>
                     <Card.Body>
@@ -77,7 +83,7 @@ const SDGSDescribe = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS12Image} className="rounded-0"/>
                     <Card.Body>
@@ -87,7 +93,7 @@ const SDGSDescribe = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS13Image} className="rounded-0"/>
                     <Card.Body>
@@ -97,7 +103,7 @@ const SDGSDescribe = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} xl={3}>
+            <Col xs={12} xl={3} data-aos="zoom-in-up">
                 <Card className="border-0 mt-4">
                     <Card.Img variant="top" src={SDGS17Image} className="rounded-0"/>
                     <Card.Body>

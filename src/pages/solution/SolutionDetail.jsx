@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     Container,
     Row,
@@ -7,6 +7,7 @@ import {
     Card,
     Image
 } from "react-bootstrap";
+import AOS from 'aos';
 
 import { useLocation } from "react-router-dom";
 
@@ -15,6 +16,7 @@ import { SolutionsDetailData } from "../../assets/data/solutionDetail";
 import SolutionLayout from "../../layouts/solution/SolutionLayout";
 import ModalContact from "../../components/modal/ModalContact";
 
+import 'aos/dist/aos.css';
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
@@ -29,6 +31,10 @@ const SolutionDetail = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
 
         <SolutionLayout>
@@ -40,7 +46,7 @@ const SolutionDetail = () => {
                             <div id="solution-detail-title-content" key={solution.id}>
                                 <Container>
                                     <Row>
-                                        <Col xs={12} xl={6} className="solution-head-main">
+                                        <Col xs={12} xl={6} className="solution-head-main" data-aos="fade-right">
                                             <h6>Our Solution</h6>
                                             <h1>{solution.properties.title}</h1>
                                             <h5>{solution.properties.decription}</h5>
@@ -48,7 +54,7 @@ const SolutionDetail = () => {
                                                 Learn More
                                             </Button>
                                         </Col>
-                                        <Col xs={12} xl={6} className="d-flex justify-content-end">
+                                        <Col xs={12} xl={6} className="d-flex justify-content-end" data-aos="fade-left">
                                             <Image src={solution.properties.mainImage} alt={solution.properties.alt} style={{ borderRadius: '30px', height: '100%', width: '90%' }} />
                                         </Col>
                                     </Row>
@@ -63,27 +69,44 @@ const SolutionDetail = () => {
                                     <div id="solution-detail-product-content" key={product.id}>
                                         <Container>
                                             <Row className="product-title">
-                                                <Col xs={12} xl={{ span: 8, offset: 2 }}>
+                                                <Col xs={12} xl={{ span: 8, offset: 2 }}
+                                                    data-aos="fade-up" 
+                                                    data-aos-anchor-placement="top-bottom"
+                                                >
                                                     <h1>{product.question}</h1>
                                                 </Col>
                                             </Row>
                                             <Row className="product-detail">
-                                                <Col xs={12} xl={6}>
+                                                <Col xs={12} xl={6} data-aos="fade-right">
                                                     <Image src={product.productImage} />
                                                 </Col>
                                                 <Col xs={12} xl={6} className="product-detail-head">
-                                                    <h3>{product.productName}</h3>
-                                                    <h5>{product.productDescribe}</h5>
+                                                    <h3 
+                                                        data-aos="fade-up" 
+                                                        data-aos-anchor-placement="top-bottom"
+                                                    >
+                                                        {product.productName}
+                                                    </h3>
+                                                    <h5 
+                                                        data-aos="fade-up" 
+                                                        data-aos-anchor-placement="top-bottom"
+                                                    >
+                                                        {product.productDescribe}
+                                                    </h5>
                                                 </Col>
                                             </Row>
                                             <Row className="product-title-benefit">
-                                                <Col xs={12} xl={{ span: 8, offset: 2 }}>
+                                                <Col 
+                                                    xs={12} xl={{ span: 8, offset: 2 }} 
+                                                    data-aos="fade-up" 
+                                                    data-aos-anchor-placement="top-bottom"
+                                                >
                                                     <h1>What benefits do you gain from the products we offer in our solutions?</h1>
                                                 </Col>
                                             </Row>
                                             <Row className="product-excellence">
                                                 {product.excellence.map((excellenceDetail) => (
-                                                    <Col xs={12} xl={6} key={excellenceDetail.id} className="product-excellence-card">
+                                                    <Col xs={12} xl={6} key={excellenceDetail.id} className="product-excellence-card" data-aos="zoom-in-up">
                                                         <Card>
                                                             <Card.Body>
                                                                 <Card.Title>{excellenceDetail.title}</Card.Title>
@@ -97,7 +120,7 @@ const SolutionDetail = () => {
                                             </Row>
                                         </Container>
                                         {!isLastProduct && product.excellence.length > 0 && (
-                                            <div className="consultant-content">
+                                            <div className="consultant-content" data-aos="fade-right">
                                                 <Container>
                                                     <Row>
                                                         <Col xs={12} xl={6}>

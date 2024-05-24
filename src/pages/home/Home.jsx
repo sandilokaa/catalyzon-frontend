@@ -8,10 +8,10 @@ import {
     Card
 } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
+import AOS from 'aos';
 import { MediaCollectionData } from "../../assets/data/media";
 import { SolutionsCollectionData } from "../../assets/data/solutionSwiper";
 import { ProblemCollectionData } from "../../assets/data/problem";
-
 import HomeLayout from "../../layouts/home/HomeLayout";
 import MarqueeClient from "../../components/marquee/Client";
 import CircularEconomy from "../../components/outlook/CircularEconomy";
@@ -24,6 +24,7 @@ import ImpactCard from "../../components/impact/ImpactCard";
 
 import SearchImpactIcon from "../../assets/images/icon/search-impact-icon.png";
 
+import 'aos/dist/aos.css';
 import "../../assets/css/home.css";
 import "../../assets/css/responsive.css";
 
@@ -40,6 +41,10 @@ const Home = () => {
     const showOutlookDetail = (outlookName) => {
         setSelectedOutlookButton(outlookName);
     };
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return (
 
@@ -85,12 +90,18 @@ const Home = () => {
 
             <div id="problem-content">
                 <Container>
-                    <Row>
+                    <Row 
+                        data-aos="fade-up" 
+                        data-aos-anchor-placement="top-bottom"
+                    >
                         <Col xs={12} xl={{ span: 10, offset: 1 }}>
                             <h1><span style={{ backgroundColor: '#012E80', color: '#FFFFFF' }}>The importance</span> of high-quality carbon projects cannot be overstated.</h1>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row 
+                        data-aos="fade-up" 
+                        data-aos-anchor-placement="top-bottom"
+                    >
                         <Col xs={12} xl={{ span: 8, offset: 2 }}>
                             <p>High-quality carbon projects reduce emissions, promote sustainability, and enhance biodiversity.</p>
                         </Col>
@@ -98,7 +109,7 @@ const Home = () => {
                     <Row>
                         {ProblemCollectionData.Collections.map((problem) => {
                             return (
-                                <Col xs={12} xl={4} key={problem.id} className="problem-card">
+                                <Col xs={12} xl={4} key={problem.id} className="problem-card" data-aos="zoom-in-up"> 
                                     <Card>
                                         <Card.Img variant="top" className="problem-icon" src={problem.properties.image} alt={problem.properties.alt} />
                                         <Card.Body>
@@ -109,22 +120,24 @@ const Home = () => {
                                 </Col>
                             )
                         })}
-
                     </Row>
                 </Container>
             </div>
 
-            <div id="quotes-developing-content">
+            <div id="quotes-developing-content"
+                data-aos="fade-up" 
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div className="quotes-developing-background"></div>
                 <Container>
                     <Row>
-                        <Col xs={12} xl={{span: 10, offset: 1}} className="quotes-one">
+                        <Col xs={12} xl={{ span: 10, offset: 1 }} className="quotes-one">
                             <h1>Developing a carbon project can be long, expensive, and meticulous</h1>
                         </Col>
-                        <Col xs={12} xl={{span: 10, offset: 1}} className="quotes-two">
+                        <Col xs={12} xl={{ span: 10, offset: 1 }} className="quotes-two">
                             <h1>Catalyzon is here to help</h1>
                         </Col>
-                        <Col xs={12} xl={{span: 10, offset: 1}} className="quotes-three">
+                        <Col xs={12} xl={{ span: 10, offset: 1 }} className="quotes-three">
                             <p>Simplify your project development journey with technology</p>
                         </Col>
                     </Row>
@@ -134,14 +147,14 @@ const Home = () => {
             <div id="about-us-content">
                 <Container>
                     <Row>
-                        <Col xs={12} xl={6} className="about-us-video">
-                            <iframe className="youtube-aboutus" width="100%" height="350" src="https://www.youtube.com/embed/s0WY5rLr15E?si=CDhgpyfn2KSj24Pm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style={{borderRadius: '30px', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}></iframe>
+                        <Col xs={12} xl={6} className="about-us-video" data-aos="fade-right">
+                            <iframe className="youtube-aboutus" width="100%" height="350" src="https://www.youtube.com/embed/s0WY5rLr15E?si=CDhgpyfn2KSj24Pm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style={{ borderRadius: '30px', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}></iframe>
                         </Col>
-                        <Col xs={12} xl={6} className="about-us-describe">
+                        <Col xs={12} xl={6} className="about-us-describe" data-aos="fade-left">
                             <hr />
                             <h5>About Us</h5>
                             <h2>Catalyzon</h2>
-                            <p>We are on a mission to provide a comprehensive waste-to-energy solution with people and eco-friendly technology that helps company reduce their environmental impact while 
+                            <p>We are on a mission to provide a comprehensive waste-to-energy solution with people and eco-friendly technology that helps company reduce their environmental impact while
                                 creating economic value from waste. Our goal is to create a more sustainable future by catalyzing change and inspiring others to join the movement towards a sustainable prosperity.
                             </p>
                         </Col>
@@ -152,12 +165,18 @@ const Home = () => {
             <div id="vision-missions-content">
                 <Container>
                     <Row className="vision-missions-describe">
-                        <Col xs={12} xl={5}>
+                        <Col xs={12} xl={5}
+                            data-aos="fade-up" 
+                            data-aos-anchor-placement="top-bottom"
+                        >
                             <h5>Our Vision</h5>
                             <p>We accelerate sustainable net zero emissions through circular economy, renewable energy, climate-empowerment, and digital transformation</p>
                         </Col>
                         {selectedOutlookButton && (
-                            <Col xs={12} xl={4}>
+                            <Col xs={12} xl={4}
+                                data-aos="fade-up" 
+                                data-aos-anchor-placement="top-bottom"
+                            >
                                 {selectedOutlookButton === 'Circular Economy' && (
                                     <CircularEconomy />
                                 )}
@@ -172,7 +191,10 @@ const Home = () => {
                                 )}
                             </Col>
                         )}
-                        <Col xs={12} xl={3}>
+                        <Col xs={12} xl={3}
+                            data-aos="fade-up" 
+                            data-aos-anchor-placement="top-bottom"
+                        >
                             <Row className="selected-button-outlook">
                                 <Col xs={12} xl={12} className="d-flex justify-content-end">
                                     <Button
@@ -215,10 +237,16 @@ const Home = () => {
             <div id="solutions-content">
                 <Container>
                     <Row className="solutions-title">
-                        <Col xs={12} xl={{ span: 10, offset: 1 }}>
+                        <Col xs={12} xl={{ span: 10, offset: 1 }}
+                            data-aos="fade-up" 
+                            data-aos-anchor-placement="top-bottom"
+                        >
                             <h1>Leading the Way with <span style={{ backgroundColor: '#012E80', color: '#FFFFFF' }}>Comprehensive</span> Sustainable Solutions</h1>
                         </Col>
-                        <Col xs={12} xl={{ span: 8, offset: 2 }}>
+                        <Col xs={12} xl={{ span: 8, offset: 2 }}
+                            data-aos="fade-up" 
+                            data-aos-anchor-placement="top-bottom"
+                        >
                             <p>Catalyzon is at the forefront of innovation, providing comprehensive solutions designed to drive sustainability and foster a greener future.</p>
                         </Col>
                     </Row>
@@ -226,7 +254,7 @@ const Home = () => {
                         {
                             SolutionsCollectionData.Collections.map((solution) => {
                                 return (
-                                    <Col xs={12} xl={6} key={solution.id} className="solution-selection">
+                                    <Col xs={12} xl={6} key={solution.id} className="solution-selection" data-aos="zoom-in-up">
                                         <Row style={{ backgroundImage: `url(${solution.properties.image})`, backgroundSize: 'cover', borderRadius: '30px', padding: '16% 4%', height: '100%' }}>
                                             <div className="solution-detail">
                                                 <Row className="solutions-detail-title">
@@ -254,18 +282,21 @@ const Home = () => {
             <div id="awards-recognitions-content">
                 <Container>
                     <Row className="awards-recognitions-title">
-                        <Col xs={12} xl={9}>
+                        <Col xs={12} xl={9} data-aos="fade-right">
                             <h1>Our awards & recognitions</h1>
                         </Col>
-                        <Col xs={12} xl={3}>
+                        <Col xs={12} xl={3} data-aos="fade-right">
                             <p>Find out what awards and recognitisions we are.</p>
                         </Col>
                     </Row>
-                    <AwardsRecognitions />
+                    <AwardsRecognitions/>
                 </Container>
             </div>
 
-            <div id="sdgs-title-content">
+            <div id="sdgs-title-content"
+                data-aos="fade-up" 
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div className="sdgs-title-background"></div>
                 <Container>
                     <Row>
@@ -305,9 +336,23 @@ const Home = () => {
                 <Container>
                     <Row className="impact-title-describe">
                         <Col xs={12} xl={5}>
-                            <h1>Since 2022 the Catalyzon Program has had an Impact in Indonesia</h1>
-                            <p>See How Catalyzon Impacts 15 Clients and Partners. </p>
-                            <div className="btn-see-impact">
+                            <h1
+                                data-aos="fade-up" 
+                                data-aos-anchor-placement="top-bottom"
+                            >
+                                Since 2022 the Catalyzon Program has had an Impact in Indonesia
+                            </h1>
+                            <p
+                                data-aos="fade-up" 
+                                data-aos-anchor-placement="top-bottom"
+                            > 
+                                See How Catalyzon Impacts 15 Clients and Partners. 
+                            </p>
+                            <div 
+                                className="btn-see-impact" 
+                                data-aos="fade-up" 
+                                data-aos-anchor-placement="top-bottom"
+                            >
                                 <Image className="search-icon-impact" src={SearchImpactIcon} alt="search-impact-icon" /> <span>See Catalyzon Impact Through 2024</span>
                             </div>
                         </Col>
@@ -316,7 +361,10 @@ const Home = () => {
                 </Container>
             </div>
 
-            <div id="client-content">
+            <div id="client-content"
+                data-aos="fade-up" 
+                data-aos-anchor-placement="top-bottom"
+            >
                 <Container>
                     <h5>Trusted by</h5>
                     <Marquee
@@ -332,12 +380,18 @@ const Home = () => {
             <div id="media-content">
                 <Container>
                     <Row>
-                        <Col xs={12} xl={12}>
+                        <Col xs={12} xl={12}
+                            data-aos="fade-up" 
+                            data-aos-anchor-placement="top-bottom"
+                        >
                             <h1>WE PROUD OF</h1>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12} xl={{ span: 4, offset: 4 }}>
+                        <Col xs={12} xl={{ span: 4, offset: 4 }}
+                            data-aos="fade-up" 
+                            data-aos-anchor-placement="top-bottom"
+                        >
                             <p>Our media who have covered our results and achievements so far.</p>
                         </Col>
                     </Row>
@@ -345,7 +399,7 @@ const Home = () => {
                         {
                             MediaCollectionData.Collections.map((media) => {
                                 return (
-                                    <Col xs={12} xl={3} key={media.id} className="media-describe">
+                                    <Col xs={12} xl={3} key={media.id} className="media-describe" data-aos="zoom-in-up">
                                         <Card className="border-0">
                                             <Card.Img className="media-image" variant="top" src={media.properties.image} alt={media.properties.alt} />
                                             <Card.Body>
