@@ -23,8 +23,8 @@ export const SolutionsCollectionData = {
             properties:
             {
                 image: SolutionTwoImage,
-                title: "Waste to Energy Project",
-                alt: "Waste to Energy Project Image",
+                title: "Waste to Energy Technology",
+                alt: "Waste to Energy Technology Image",
                 link: '/solution/detail/2'
             }
         },

@@ -95,7 +95,7 @@ const Home = () => {
                         data-aos-anchor-placement="top-bottom"
                     >
                         <Col xs={12} xl={{ span: 10, offset: 1 }}>
-                            <h1><span style={{ backgroundColor: '#012E80', color: '#FFFFFF' }}>The importance</span> of high-quality carbon projects cannot be overstated.</h1>
+                            <h1><span style={{ backgroundColor: '#012E80', color: '#FFFFFF' }}>The importance</span> of high-quality waste-to-energy project cannot be overstated.</h1>
                         </Col>
                     </Row>
                     <Row 
@@ -103,7 +103,7 @@ const Home = () => {
                         data-aos-anchor-placement="top-bottom"
                     >
                         <Col xs={12} xl={{ span: 8, offset: 2 }}>
-                            <p>High-quality carbon projects reduce emissions, promote sustainability, and enhance biodiversity.</p>
+                            <p>High-quality waste-to-energy project reduce emissions, promote sustainability, and enhance biodiversity.</p>
                         </Col>
                     </Row>
                     <Row>

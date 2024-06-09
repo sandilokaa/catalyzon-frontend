@@ -23,9 +23,9 @@ export const SolutionsCollectionData = {
             properties:
             {
                 icon: SolutionTwoIcon,
-                title: "Waste to Energy Project",
-                alt: "Waste to Energy Project Image",
-                decription: "Our Waste to Energy Project is a pivotal element of our commitment to advancing sustainability in business. This project focuses on transforming waste materials into valuable energy resources, thereby reducing environmental impact and promoting resource efficiency."
+                title: "Waste to Energy Technology",
+                alt: "Waste to Energy Technology Image",
+                decription: "Our Waste to Energy Technology is a pivotal element of our commitment to advancing sustainability in business. This project focuses on transforming waste materials into valuable energy resources, thereby reducing environmental impact and promoting resource efficiency."
             }
         },
         {
