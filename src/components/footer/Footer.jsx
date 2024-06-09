@@ -94,7 +94,7 @@ const FooterComponent = () => {
                                             <p>Waste Management Service</p>
                                         </div>
                                         <div onClick={() => window.location.href = '/solution/detail/2'} style={{ cursor: 'pointer' }}>
-                                            <p>Waste to Energy Project</p>
+                                            <p>Waste to Energy Technology</p>
                                         </div>
                                         <div onClick={() => window.location.href = '/solution/detail/3'} style={{ cursor: 'pointer' }}>
                                             <p>Training and Community Development</p>
